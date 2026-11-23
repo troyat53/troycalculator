@@ -1,0 +1,68 @@
+<HTML>
+<HEAD>
+<TITLE>T-shirt purchase web</TITLE>
+</HEAD>
+<body bgcolor=white>
+	<link rel="stylesheet" href="T-Shirt Logo.css">
+<DIV id="quote">
+<P id="titletext" style="color: black;font-family:'Roboto';font-size: 45px;">Welcome to Avery's T-shirt purchase web! customize your T-shirt design with different logos and colors!</P>
+</DIV>
+
+<IMG id="blackt" src="images/1.png"></IMG>
+
+<DIV id="colort"></DIV>
+<DIV id="black" style="background-color:#000000;" onclick="document.getElementById('blackt').src='images/1.png'"></DIV>
+<DIV id="green"  style="background-color:#00bf63;" onclick="document.getElementById('blackt').src='images/2.png'"></DIV>
+<DIV id="pink"  style="background-color:#ff66c4;" onclick="document.getElementById('blackt').src='images/3.png'"></DIV>
+<DIV id="orange"  style="background-color:#ff751f;" onclick="document.getElementById('blackt').src='images/4.png'"></DIV>
+<DIV id="grey"  style="background-color:#545454;" onclick="document.getElementById('blackt').src='images/5.png'"></DIV>
+<DIV id="white"  style="background-color:#ffffff;" onclick="document.getElementById('blackt').src='images/6.png'"></DIV>
+<DIV id="blue"  style="background-color:#00338d;" onclick="document.getElementById('blackt').src='images/7.png'"></DIV>
+<DIV id="red"  style="background-color:#d43429;" onclick="document.getElementById('blackt').src='images/8.png'"></DIV>
+<P id="changetcolor">change shirt color</P>
+
+
+<IMG id="logo" src="images/blank.png">
+<DIV id="logot"></DIV>
+  <DIV id="logo1"  onclick="document.getElementById('logo').src='images/11.png'"></DIV>
+  <DIV id="logo2"  onclick="document.getElementById('logo').src='images/22.png'"></DIV>
+  <DIV id="logo3"  onclick="document.getElementById('logo').src='images/33.png'"></DIV>
+  <DIV id="nologo" style="background-color:white; border:2px solid black;" onclick="document.getElementById('logo').src='images/blank.png'">no logo</DIV>
+  <P id="chooselogo">choose a logo</P>
+
+
+<IMG id="settings" src="images/bsettings.png" onclick="document.getElementById('fadebox').style.display='block'; document.getElementById('popup').style.display='flex'"></IMG>
+<DIV id="fadebox" style="opacity: 0.7;" onclick="document.getElementById('fadebox').style.display='none'; document.getElementById('popup').style.display='none';"></DIV>
+
+
+<DIV id="popup">
+  <SPAN id="close" onclick="document.getElementById('fadebox').style.display='none'; document.getElementById('popup').style.display='none';">X</SPAN>
+  <P id="bgcolortext">Background Color</P>
+  <DIV id= "bgrow">
+  <DIV id="bgblack" style="background-color:black;" onclick="document.body.style.backgroundColor='black';document.getElementById('titletext').style.color='white'; document.getElementById('settings').src='images/wsettings.png';"></DIV>
+  <DIV id="bgwhite" style="background-color:white;" onclick="document.body.style.backgroundColor='white';document.getElementById('titletext').style.color='black';document.getElementById('settings').src='images/bsettings.png';"></DIV>
+  <DIV id="bggrey" style="background-color:grey;" onclick="document.body.style.backgroundColor='grey';document.getElementById('titletext').style.color='black';document.getElementById('settings').src='images/bsettings.png';"></DIV>
+  <DIV id="bgblue" style="background-color:blue;" onclick="document.body.style.backgroundColor='blue';document.getElementById('titletext').style.color='black';document.getElementById('settings').src='images/bsettings.png';"></DIV>
+  <DIV id="bgbrown" style="background-color:brown;" onclick="document.body.style.backgroundColor='brown';document.getElementById('titletext').style.color='black';document.getElementById('settings').src='images/bsettings.png';"></DIV>
+</DIV>
+
+
+<P id="fonttext">Title Fonts</P>
+<DIV id="fontrow">
+  <DIV id="fontroboto" onclick="document.getElementById('titletext').style.fontFamily='Roboto';">Roboto</DIV>
+  <DIV id="fontcurlz" onclick="document.getElementById('titletext').style.fontFamily='Curlz MT';">Curlz MT</DIV>
+  <DIV id="fontcolonna" onclick="document.getElementById('titletext').style.fontFamily='Colonna MT';">Colonna MT</DIV>
+  <DIV id="fontcreepy" onclick="document.getElementById('titletext').style.fontFamily='creepy';">Heartless</DIV>
+</DIV>
+
+
+<P id="fontcolor">Title Color</P>
+<DIV id="fontcolorrow">
+  <DIV id="fblack" style="background-color:black;" onclick="document.getElementById('titletext').style.color='black';"></DIV>
+  <DIV id="fwhite" style="background-color:white; border:1px solid black;" onclick="document.getElementById('titletext').style.color='white';"></DIV>
+  <DIV id="fgrey" style="background-color:grey;" onclick="document.getElementById('titletext').style.color='grey';"></DIV>
+   <DIV id="fblue" style="background-color:blue;" onclick="document.getElementById('titletext').style.color='blue';"></DIV>
+  <DIV id="fred" style="background-color:red;" onclick="document.getElementById('titletext').style.color='red';"></DIV>
+  </DIV>
+ </body>
+</HTML>

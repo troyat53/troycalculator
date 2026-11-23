@@ -1,0 +1,976 @@
+<HTML>
+<HEAD>
+<link rel="stylesheet" href=".css">
+</HEAD>
+<body style="background-color:white;">
+
+<script>
+    var total=0;
+    var newnum=0;
+    var operation="";
+</script>
+
+<DIV id='normal' onclick="g1on();g2off();g3off();g4off();g5off();g6off();">
+    <SPAN id='normalt'>default</SPAN>
+
+    <div class="button" id="n0" onclick="document.getElementById('aa').innerHTML='0'; total=total*10; document.getElementById('aa').innerHTML=total;">
+        <span>0</span>
+    </div>
+
+    <div class="button" id="nd2" onclick="document.getElementById('aa').innerHTML='.';">
+        <span>.</span>
+    </div>
+
+    <div class="button" id="nn" onclick="document.getElementById('aa').innerHTML='-';">
+        <span>(-)</span>
+    </div>
+
+    <div class="button" id="ne">
+        <span>=</span>
+    </div>
+
+
+    <div class="button" id="n1" onclick="document.getElementById('aa').innerHTML='1'; total=total*10+1; document.getElementById('aa').innerHTML=total;">
+        <span>1</span>
+    </div>
+
+    <div class="button" id="n2" onclick="document.getElementById('aa').innerHTML='2'; total=total*10+2; document.getElementById('aa').innerHTML=total;">
+        <span>2</span>
+    </div>
+
+    <div class="button" id="n3" onclick="document.getElementById('aa').innerHTML='3'; total=total*10+3; document.getElementById('aa').innerHTML=total;">
+        <span>3</span>
+    </div>
+
+    <div class="button" id="np" onclick="if (operation == '') {
+    firstNum = total;
+    operation = '+';
+    total = 0;
+    document.getElementById('aa').innerHTML = firstNum + '+';
+}
+else if (operation == '+') {
+    firstNum = firstNum + total;
+    total = 0;
+    document.getElementById('aa').innerHTML = firstNum + '+';
+}">
+        <span>+</span>
+    </div>
+
+    <div class="button" id="nm"  onclick="firstNum=total; operation='–'; total = 0; document.getElementById('aa').innerHTML=firstNum+'-'">
+        <span>-</span>
+    </div>
+
+
+    <div class="button" id="n4" onclick="document.getElementById('aa').innerHTML='4'; total=total*10+4; document.getElementById('aa').innerHTML=total;">
+        <span>4</span>
+    </div>
+
+    <div class="button" id="n5" onclick="document.getElementById('aa').innerHTML='5'; total=total*10+5; document.getElementById('aa').innerHTML=total;">
+        <span>5</span>
+    </div>
+
+    <div class="button" id="n6" onclick="document.getElementById('aa').innerHTML='6'; total=total*10+6; document.getElementById('aa').innerHTML=total;">
+        <span>6</span>
+    </div>
+
+    <div class="button" id="nt"  onclick="firstNum=total; operation='*'; total = 0; document.getElementById('aa').innerHTML=firstNum+'*'">
+        <span>*</span>
+    </div>
+
+    <div class="button" id="nd"  onclick="firstNum=total; operation='/'; total = 0; document.getElementById('aa').innerHTML=firstNum+'/'"> 
+        <span>/</span>
+    </div>
+
+
+    <div class="button" id="n7" onclick="document.getElementById('aa').innerHTML='7'; total=total*10+7; document.getElementById('aa').innerHTML=total;">
+        <span>7</span>
+    </div>
+
+    <div class="button" id="n8" onclick="document.getElementById('aa').innerHTML='8'; total=total*10+8; document.getElementById('aa').innerHTML=total;">
+        <span>8</span>
+    </div>
+
+    <div class="button" id="n9" onclick="document.getElementById('aa').innerHTML='9'; total=total*10+9; document.getElementById('aa').innerHTML=total;">
+        <span>9</span>
+    </div>
+
+    <div class="button" id="np1" onclick="document.getElementById('aa').innerHTML='(';">
+        <span>(</span>
+    </div>
+
+    <div class="button" id="np2" onclick="document.getElementById('aa').innerHTML=')';">
+        <span>)</span>
+    </div>
+
+
+    <div class="button" id="ce" onclick="total = Math.floor(total/10);document.getElementById('aa').innerHTML=total;">
+        <span>CE</span>
+    </div>
+
+    <div class="button" id="c" onclick= "total=0; document.getElementById('aa').innerHTML=total;">
+        <span>C</span>
+    </div>
+</DIV>
+
+<script>
+function g1off(){
+        document.getElementById('n0').style.left='-50%';
+         document.getElementById('nd2').style.left='-50%';
+          document.getElementById('nn').style.left='-50%';
+           document.getElementById('ne').style.left='-50%';
+            document.getElementById('n1').style.left='150%';
+             document.getElementById('n2').style.left='150%';
+              document.getElementById('n3').style.left='150%';
+               document.getElementById('np').style.left='150%';
+                document.getElementById('nm').style.left='150%';
+                 document.getElementById('n4').style.left='-50%';
+                  document.getElementById('n5').style.left='-50%';
+                   document.getElementById('n6').style.left='-50%';
+                    document.getElementById('nt').style.left='-50%';
+                     document.getElementById('nd').style.left='-50%';
+                      document.getElementById('n7').style.left='150%';
+                       document.getElementById('n8').style.left='150%';
+                        document.getElementById('n9').style.left='150%';
+                         document.getElementById('np1').style.left='150%';
+                          document.getElementById('np2').style.left='150%';
+                           document.getElementById('ce').style.left='-50%';
+                            document.getElementById('c').style.left='-50%';
+            }
+ function g1on(){
+        document.getElementById('n0').style.left='30%';
+         document.getElementById('nd2').style.left='37%';
+          document.getElementById('nn').style.left='44%';
+           document.getElementById('ne').style.left='51%';
+            document.getElementById('n1').style.left='30%';
+             document.getElementById('n2').style.left='37%';
+              document.getElementById('n3').style.left='44%';
+               document.getElementById('np').style.left='51%';
+                document.getElementById('nm').style.left='58%';
+                 document.getElementById('n4').style.left='30%';
+                  document.getElementById('n5').style.left='37%';
+                   document.getElementById('n6').style.left='44%';
+                    document.getElementById('nt').style.left='51%';
+                     document.getElementById('nd').style.left='58%';
+                      document.getElementById('n7').style.left='30%';
+                       document.getElementById('n8').style.left='37%';
+                        document.getElementById('n9').style.left='44%';
+                         document.getElementById('np1').style.left='51%';
+                          document.getElementById('np2').style.left='58%';
+                           document.getElementById('ce').style.left='51%';
+                            document.getElementById('c').style.left='58%';
+                        }
+</script>
+
+
+
+<DIV id='dodgers' onclick="g1off();g2on();g3off();g4off();g5off();g6off();">
+    <div class="labutton" id="lan0" onclick="document.getElementById('aa').innerHTML='0';total=total*10; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers0.jpg">
+        <span>0</span>
+    </div>
+
+    <div class="labutton" id="land2" onclick="document.getElementById('aa').innerHTML='.';">
+        <IMG src="images/dodgersd2.jpg">
+        <span>.</span>
+    </div>
+
+    <div class="labutton" id="lann" onclick="document.getElementById('aa').innerHTML='-';">
+        <IMG src="images/dodgersn.jpg">
+        <span>(-)</span>
+    </div>
+
+    <div class="labutton" id="lane">
+        <IMG src="images/dodgerse.jpg">
+        <span>=</span>
+    </div>
+
+
+    <div class="labutton" id="lan1" onclick="document.getElementById('aa').innerHTML='1';total=total*10+1; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers1.jpg">
+        <span>1</span>
+    </div>
+
+    <div class="labutton" id="lan2" onclick="document.getElementById('aa').innerHTML='2';total=total*10+2; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers2.jpg">
+        <span>2</span>
+    </div>
+
+    <div class="labutton" id="lan3" onclick="document.getElementById('aa').innerHTML='3';total=total*10+3; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers3.jpg">
+        <span>3</span>
+    </div>
+    <div class="labutton" id="lanp"  onclick="firstNum=total; operation='+'; total = 0; document.getElementById('aa').innerHTML=firstNum+'+'">
+        <IMG src="images/dodgersp.jpg">
+        <span>+</span>
+    </div>
+
+    <div class="labutton" id="lanm"  onclick="firstNum=total; operation='-'; total = 0; document.getElementById('aa').innerHTML=firstNum+'-'">
+        <IMG src="images/dodgersm.jpg">
+        <span>-</span>
+    </div>
+
+
+    <div class="labutton" id="lan4" onclick="document.getElementById('aa').innerHTML='4'; total=total*10+4; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers4.jpg">
+        <span>4</span>
+    </div>
+
+    <div class="labutton" id="lan5" onclick="document.getElementById('aa').innerHTML='5'; total=total*10+5; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers5.jpg">
+        <span>5</span>
+    </div>
+
+    <div class="labutton" id="lan6" onclick="document.getElementById('aa').innerHTML='6'; total=total*10+6; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers6.jpg">
+        <span>6</span>
+    </div>
+
+    <div class="labutton" id="lant"  onclick="firstNum=total; operation='*'; total = 0; document.getElementById('aa').innerHTML=firstNum+'*'">
+        <IMG src="images/dodgerst.jpg">
+        <span>*</span>
+    </div>
+
+    <div class="labutton" id="land" onclick="firstNum=total; operation='/'; total = 0; document.getElementById('aa').innerHTML=firstNum+'/'">
+        <IMG src="images/dodgersd.jpg">
+        <span>/</span>
+    </div>
+
+
+    <div class="labutton" id="lan7" onclick="document.getElementById('aa').innerHTML='7'; total=total*10+7; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers7.jpg">
+        <span>7</span>
+    </div>
+
+    <div class="labutton" id="lan8" onclick="document.getElementById('aa').innerHTML='8'; total=total*10+8; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers8.jpg">
+        <span>8</span>
+    </div>
+
+    <div class="labutton" id="lan9" onclick="document.getElementById('aa').innerHTML='9'; total=total*10+9; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers9.jpg">
+        <span>9</span>
+    </div>
+
+    <div class="labutton" id="lanp1" onclick="document.getElementById('aa').innerHTML='(';">
+        <IMG src="images/dodgersnp1.jpg">
+        <span>(</span>
+    </div>
+
+    <div class="labutton" id="lanp2" onclick="document.getElementById('aa').innerHTML=')';">
+        <IMG src="images/dodgersnp2.jpg">
+        <span>)</span>
+    </div>
+
+
+    <div class="labutton" id="lace">
+        <IMG src="images/dodgersce.jpg" onclick="total = Math.floor(total/10);document.getElementById('aa').innerHTML=total;">
+        <span>CE</span>
+    </div>
+
+    <div class="labutton" id="lac" onclick= "total=0; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgersc.jpg">
+        <span>C</span>
+    </div>
+</DIV>
+
+<script>
+function g2off(){
+        document.getElementById('lan0').style.left='-50%';
+         document.getElementById('land2').style.left='-50%';
+          document.getElementById('lann').style.left='-50%';
+           document.getElementById('lane').style.left='-50%';
+            document.getElementById('lan1').style.left='150%';
+             document.getElementById('lan2').style.left='150%';
+              document.getElementById('lan3').style.left='150%';
+               document.getElementById('lanp').style.left='150%';
+                document.getElementById('lanm').style.left='150%';
+                 document.getElementById('lan4').style.left='-50%';
+                  document.getElementById('lan5').style.left='-50%';
+                   document.getElementById('lan6').style.left='-50%';
+                    document.getElementById('lant').style.left='-50%';
+                     document.getElementById('land').style.left='-50%';
+                      document.getElementById('lan7').style.left='150%';
+                       document.getElementById('lan8').style.left='150%';
+                        document.getElementById('lan9').style.left='150%';
+                         document.getElementById('lanp1').style.left='150%';
+                          document.getElementById('lanp2').style.left='150%';
+                           document.getElementById('lace').style.left='-50%';
+                            document.getElementById('lac').style.left='-50%';
+            }
+ function g2on(){
+        document.getElementById('lan0').style.left='30%';
+         document.getElementById('land2').style.left='37%';
+          document.getElementById('lann').style.left='44%';
+           document.getElementById('lane').style.left='51%';
+            document.getElementById('lan1').style.left='30%';
+             document.getElementById('lan2').style.left='37%';
+              document.getElementById('lan3').style.left='44%';
+               document.getElementById('lanp').style.left='51%';
+                document.getElementById('lanm').style.left='58%';
+                 document.getElementById('lan4').style.left='30%';
+                  document.getElementById('lan5').style.left='37%';
+                   document.getElementById('lan6').style.left='44%';
+                    document.getElementById('lant').style.left='51%';
+                     document.getElementById('land').style.left='58%';
+                      document.getElementById('lan7').style.left='30%';
+                       document.getElementById('lan8').style.left='37%';
+                        document.getElementById('lan9').style.left='44%';
+                         document.getElementById('lanp1').style.left='51%';
+                          document.getElementById('lanp2').style.left='58%';
+                           document.getElementById('lace').style.left='51%';
+                            document.getElementById('lac').style.left='58%';
+                        }
+</script>
+
+
+<DIV id='padres' onclick="g1off();g2off();g3on();g4off();g5off();g6off();">
+    <div class="sdbutton" id="sdn0" onclick="document.getElementById('aa').innerHTML='0'; total=total*10; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers0.jpg">
+        <span>0</span>
+    </div>
+
+    <div class="sdbutton" id="sdnd2" onclick="document.getElementById('aa').innerHTML='.';">
+        <IMG src="images/dodgersd2.jpg">
+        <span>.</span>
+    </div>
+
+    <div class="sdbutton" id="sdnn" onclick="document.getElementById('aa').innerHTML='-';">
+        <IMG src="images/dodgersn.jpg">
+        <span>(-)</span>
+    </div>
+
+    <div class="sdbutton" id="sdne">
+        <IMG src="images/padrese.png">
+        <span>=</span>
+    </div>
+
+
+    <div class="sdbutton" id="sdn1" onclick="document.getElementById('aa').innerHTML='1'; total=total*10+1; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers1.jpg">
+        <span>1</span>
+    </div>
+
+    <div class="sdbutton" id="sdn2" onclick="document.getElementById('aa').innerHTML='2'; total=total*10+2; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers2.jpg">
+        <span>2</span>
+    </div>
+
+    <div class="sdbutton" id="sdn3" onclick="document.getElementById('aa').innerHTML='3'; total=total*10+3; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers3.jpg">
+        <span>3</span>
+    </div>
+    <div class="sdbutton" id="sdnp"  onclick="firstNum=total; operation='+'; total = 0; document.getElementById('aa').innerHTML=firstNum+'+'">
+        <IMG src="images/dodgersp.jpg">
+        <span>+</span>
+    </div>
+
+    <div class="sdbutton" id="sdnm"  onclick="firstNum=total; operation='-'; total = 0; document.getElementById('aa').innerHTML=firstNum+'-'">
+        <IMG src="images/dodgersm.jpg">
+        <span>-</span>
+    </div>
+
+
+    <div class="sdbutton" id="sdn4" onclick="document.getElementById('aa').innerHTML='4'; total=total*10+4; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers4.jpg">
+        <span>4</span>
+    </div>
+
+    <div class="sdbutton" id="sdn5" onclick="document.getElementById('aa').innerHTML='5'; total=total*10+5; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers5.jpg">
+        <span>5</span>
+    </div>
+
+    <div class="sdbutton" id="sdn6" onclick="document.getElementById('aa').innerHTML='6'; total=total*10+6; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers6.jpg">
+        <span>6</span>
+    </div>
+
+    <div class="sdbutton" id="sdnt"  onclick="firstNum=total; operation='*'; total = 0; document.getElementById('aa').innerHTML=firstNum+'*'">
+        <IMG src="images/dodgerst.jpg">
+        <span>*</span>
+    </div>
+
+    <div class="sdbutton" id="sdnd"  onclick="firstNum=total; operation='/'; total = 0; document.getElementById('aa').innerHTML=firstNum+'/'">
+        <IMG src="images/dodgersd.jpg">
+        <span>/</span>
+    </div>
+
+
+    <div class="sdbutton" id="sdn7" onclick="document.getElementById('aa').innerHTML='7'; total=total*10+7; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers7.jpg">
+        <span>7</span>
+    </div>
+
+    <div class="sdbutton" id="sdn8" onclick="document.getElementById('aa').innerHTML='8'; total=total*10+8; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers8.jpg">
+        <span>8</span>
+    </div>
+
+    <div class="sdbutton" id="sdn9" onclick="document.getElementById('aa').innerHTML='9'; total=total*10+9; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers9.jpg">
+        <span>9</span>
+    </div>
+
+    <div class="sdbutton" id="sdnp1" onclick="document.getElementById('aa').innerHTML='(';">
+        <IMG src="images/dodgersnp1.jpg">
+        <span>(</span>
+    </div>
+
+    <div class="sdbutton" id="sdnp2" onclick="document.getElementById('aa').innerHTML=')';">
+        <IMG src="images/dodgersnp2.jpg">
+        <span>)</span>
+    </div>
+
+
+    <div class="sdbutton" id="sdce" onclick="total = Math.floor(total/10);document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgersce.jpg">
+        <span>CE</span>
+    </div>
+
+    <div class="sdbutton" id="sdc" onclick= "total=0; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgersc.jpg">
+        <span>C</span>
+    </div>
+</DIV>
+
+<script>
+function g3off(){
+        document.getElementById('sdn0').style.left='-50%';
+         document.getElementById('sdnd2').style.left='-50%';
+          document.getElementById('sdnn').style.left='-50%';
+           document.getElementById('sdne').style.left='-50%';
+            document.getElementById('sdn1').style.left='150%';
+             document.getElementById('sdn2').style.left='150%';
+              document.getElementById('sdn3').style.left='150%';
+               document.getElementById('sdnp').style.left='150%';
+                document.getElementById('sdnm').style.left='150%';
+                 document.getElementById('sdn4').style.left='-50%';
+                  document.getElementById('sdn5').style.left='-50%';
+                   document.getElementById('sdn6').style.left='-50%';
+                    document.getElementById('sdnt').style.left='-50%';
+                     document.getElementById('sdnd').style.left='-50%';
+                      document.getElementById('sdn7').style.left='150%';
+                       document.getElementById('sdn8').style.left='150%';
+                        document.getElementById('sdn9').style.left='150%';
+                         document.getElementById('sdnp1').style.left='150%';
+                          document.getElementById('sdnp2').style.left='150%';
+                           document.getElementById('sdce').style.left='-50%';
+                            document.getElementById('sdc').style.left='-50%';
+            }
+ function g3on(){
+        document.getElementById('sdn0').style.left='30%';
+         document.getElementById('sdnd2').style.left='37%';
+          document.getElementById('sdnn').style.left='44%';
+           document.getElementById('sdne').style.left='51%';
+            document.getElementById('sdn1').style.left='30%';
+             document.getElementById('sdn2').style.left='37%';
+              document.getElementById('sdn3').style.left='44%';
+               document.getElementById('sdnp').style.left='51%';
+                document.getElementById('sdnm').style.left='58%';
+                 document.getElementById('sdn4').style.left='30%';
+                  document.getElementById('sdn5').style.left='37%';
+                   document.getElementById('sdn6').style.left='44%';
+                    document.getElementById('sdnt').style.left='51%';
+                     document.getElementById('sdnd').style.left='58%';
+                      document.getElementById('sdn7').style.left='30%';
+                       document.getElementById('sdn8').style.left='37%';
+                        document.getElementById('sdn9').style.left='44%';
+                         document.getElementById('sdnp1').style.left='51%';
+                          document.getElementById('sdnp2').style.left='58%';
+                           document.getElementById('sdce').style.left='51%';
+                            document.getElementById('sdc').style.left='58%';
+                        }
+</script>
+
+
+
+
+<DIV id='dbacks' onclick="g1off();g2off();g3off();g4on();g5off();g6off();">
+    <div class="azbutton" id="azn0" onclick="document.getElementById('aa').innerHTML='0'; total=total*10; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers0.jpg">
+        <span>0</span>
+    </div>
+
+    <div class="azbutton" id="aznd2" onclick="document.getElementById('aa').innerHTML='.';">
+        <IMG src="images/dodgersd2.jpg">
+        <span>.</span>
+    </div>
+
+    <div class="azbutton" id="aznn" onclick="document.getElementById('aa').innerHTML='-';">
+        <IMG src="images/dodgersn.jpg">
+        <span>(-)</span>
+    </div>
+
+    <div class="azbutton" id="azne">
+        <IMG src="images/padrese.png">
+        <span>=</span>
+    </div>
+
+
+    <div class="azbutton" id="azn1" onclick="document.getElementById('aa').innerHTML='1'; total=total*10+1; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers1.jpg">
+        <span>1</span>
+    </div>
+
+    <div class="azbutton" id="azn2" onclick="document.getElementById('aa').innerHTML='2'; total=total*10+2; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers2.jpg">
+        <span>2</span>
+    </div>
+
+    <div class="azbutton" id="azn3"onclick="document.getElementById('aa').innerHTML='3'; total=total*10+3; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers3.jpg">
+        <span>3</span>
+    </div>
+    <div class="azbutton" id="aznp"  onclick="firstNum=total; operation='+'; total = 0; document.getElementById('aa').innerHTML=firstNum+'+'">
+        <IMG src="images/dodgersp.jpg">
+        <span>+</span>
+    </div>
+
+    <div class="azbutton" id="aznm"  onclick="firstNum=total; operation='-'; total = 0; document.getElementById('aa').innerHTML=firstNum+'-'">
+        <IMG src="images/dodgersm.jpg">
+        <span>-</span>
+    </div>
+
+
+    <div class="azbutton" id="azn4" onclick="document.getElementById('aa').innerHTML='4'; total=total*10+4; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers4.jpg">
+        <span>4</span>
+    </div>
+
+    <div class="azbutton" id="azn5" onclick="document.getElementById('aa').innerHTML='5'; total=total*10+5; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers5.jpg">
+        <span>5</span>
+    </div>
+
+    <div class="azbutton" id="azn6" onclick="document.getElementById('aa').innerHTML='6'; total=total*10+6; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers6.jpg">
+        <span>6</span>
+    </div>
+
+    <div class="azbutton" id="aznt" onclick="firstNum=total; operation='*'; total = 0; document.getElementById('aa').innerHTML=firstNum+'*'">
+        <IMG src="images/dodgerst.jpg">
+        <span>*</span>
+    </div>
+
+    <div class="azbutton" id="aznd"  onclick="firstNum=total; operation='/'; total = 0; document.getElementById('aa').innerHTML=firstNum+'/'">
+        <IMG src="images/dodgersd.jpg">
+        <span>/</span>
+    </div>
+
+    <div class="azbutton" id="azn7" onclick="document.getElementById('aa').innerHTML='7'; total=total*10+7; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers7.jpg">
+        <span>7</span>
+    </div>
+
+    <div class="azbutton" id="azn8" onclick="document.getElementById('aa').innerHTML='8'; total=total*10+8; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers8.jpg">
+        <span>8</span>
+    </div>
+
+    <div class="azbutton" id="azn9" onclick="document.getElementById('aa').innerHTML='9'; total=total*10+9; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers9.jpg">
+        <span>9</span>
+    </div>
+
+    <div class="azbutton" id="aznp1" onclick="document.getElementById('aa').innerHTML='(';">
+        <IMG src="images/dodgersnp1.jpg">
+        <span>(</span>
+    </div>
+
+    <div class="azbutton" id="aznp2" onclick="document.getElementById('aa').innerHTML=')';">
+        <IMG src="images/dodgersnp2.jpg">
+        <span>)</span>
+    </div>
+
+
+    <div class="azbutton" id="azce" onclick="total = Math.floor(total/10);document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgersce.jpg">
+        <span>CE</span>
+    </div>
+
+    <div class="azbutton" id="azc" onclick= "total=0; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgersc.jpg">
+        <span>C</span>
+    </div>
+</DIV>
+
+<script>
+function g4off(){
+        document.getElementById('azn0').style.left='-50%';
+         document.getElementById('aznd2').style.left='-50%';
+          document.getElementById('aznn').style.left='-50%';
+           document.getElementById('azne').style.left='-50%';
+            document.getElementById('azn1').style.left='150%';
+             document.getElementById('azn2').style.left='150%';
+              document.getElementById('azn3').style.left='150%';
+               document.getElementById('aznp').style.left='150%';
+                document.getElementById('aznm').style.left='150%';
+                 document.getElementById('azn4').style.left='-50%';
+                  document.getElementById('azn5').style.left='-50%';
+                   document.getElementById('azn6').style.left='-50%';
+                    document.getElementById('aznt').style.left='-50%';
+                     document.getElementById('aznd').style.left='-50%';
+                      document.getElementById('azn7').style.left='150%';
+                       document.getElementById('azn8').style.left='150%';
+                        document.getElementById('azn9').style.left='150%';
+                         document.getElementById('aznp1').style.left='150%';
+                          document.getElementById('aznp2').style.left='150%';
+                           document.getElementById('azce').style.left='-50%';
+                            document.getElementById('azc').style.left='-50%';
+            }
+ function g4on(){
+        document.getElementById('azn0').style.left='30%';
+         document.getElementById('aznd2').style.left='37%';
+          document.getElementById('aznn').style.left='44%';
+           document.getElementById('azne').style.left='51%';
+            document.getElementById('azn1').style.left='30%';
+             document.getElementById('azn2').style.left='37%';
+              document.getElementById('azn3').style.left='44%';
+               document.getElementById('aznp').style.left='51%';
+                document.getElementById('aznm').style.left='58%';
+                 document.getElementById('azn4').style.left='30%';
+                  document.getElementById('azn5').style.left='37%';
+                   document.getElementById('azn6').style.left='44%';
+                    document.getElementById('aznt').style.left='51%';
+                     document.getElementById('aznd').style.left='58%';
+                      document.getElementById('azn7').style.left='30%';
+                       document.getElementById('azn8').style.left='37%';
+                        document.getElementById('azn9').style.left='44%';
+                         document.getElementById('aznp1').style.left='51%';
+                          document.getElementById('aznp2').style.left='58%';
+                           document.getElementById('azce').style.left='51%';
+                            document.getElementById('azc').style.left='58%';
+                        }
+</script>
+
+
+
+<DIV id='giants' onclick="g1off();g2off();g3off();g4off();g5on();g6off();">
+    <div class="sfbutton" id="sfn0" onclick="document.getElementById('aa').innerHTML='0'; total=total*10; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers0.jpg">
+        <span>0</span>
+    </div>
+
+    <div class="sfbutton" id="sfnd2" onclick="document.getElementById('aa').innerHTML='.';">
+        <IMG src="images/dodgersd2.jpg">
+        <span>.</span>
+    </div>
+
+    <div class="sfbutton" id="sfnn" onclick="document.getElementById('aa').innerHTML='-';">
+        <IMG src="images/dodgersn.jpg">
+        <span>(-)</span>
+    </div>
+
+    <div class="sfbutton" id="sfne">
+        <IMG src="images/padrese.png">
+        <span>=</span>
+    </div>
+
+
+    <div class="sfbutton" id="sfn1" onclick="document.getElementById('aa').innerHTML='1'; total=total*10+1; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers1.jpg">
+        <span>1</span>
+    </div>
+
+    <div class="sfbutton" id="sfn2" onclick="document.getElementById('aa').innerHTML='2'; total=total*10+2; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers2.jpg">
+        <span>2</span>
+    </div>
+
+    <div class="sfbutton" id="sfn3" onclick="document.getElementById('aa').innerHTML='3';total=total*10+3; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers3.jpg">
+        <span>3</span>
+    </div>
+    <div class="sfbutton" id="sfnp"  onclick="firstNum=total; operation='+'; total = 0; document.getElementById('aa').innerHTML=firstNum+'+'">
+        <IMG src="images/dodgersp.jpg">
+        <span>+</span>
+    </div>
+
+    <div class="sfbutton" id="sfnm"  onclick="firstNum=total; operation='-'; total = 0; document.getElementById('aa').innerHTML=firstNum+'-'">
+        <IMG src="images/dodgersm.jpg">
+        <span>-</span>
+    </div>
+
+
+    <div class="sfbutton" id="sfn4" onclick="document.getElementById('aa').innerHTML='4'; total=total*10+4; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers4.jpg">
+        <span>4</span>
+    </div>
+
+    <div class="sfbutton" id="sfn5" onclick="document.getElementById('aa').innerHTML='5'; total=total*10+5; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers5.jpg">
+        <span>5</span>
+    </div>
+
+    <div class="sfbutton" id="sfn6" onclick="document.getElementById('aa').innerHTML='6'; total=total*10+6; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers6.jpg">
+        <span>6</span>
+    </div>
+
+    <div class="sfbutton" id="sfnt"  onclick="firstNum=total; operation='*'; total = 0; document.getElementById('aa').innerHTML=firstNum+'*'">
+        <IMG src="images/dodgerst.jpg">
+        <span>*</span>
+    </div>
+
+    <div class="sfbutton" id="sfnd"  onclick="firstNum=total; operation='/'; total = 0; document.getElementById('aa').innerHTML=firstNum+'/'">
+        <IMG src="images/dodgersd.jpg">
+        <span>/</span>
+    </div>
+
+    <div class="sfbutton" id="sfn7" onclick="document.getElementById('aa').innerHTML='7'; total=total*10+7; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers7.jpg">
+        <span>7</span>
+    </div>
+
+    <div class="sfbutton" id="sfn8" onclick="document.getElementById('aa').innerHTML='8'; total=total*10+8; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers8.jpg">
+        <span>8</span>
+    </div>
+
+    <div class="sfbutton" id="sfn9" onclick="document.getElementById('aa').innerHTML='9'; total=total*10+9; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers9.jpg">
+        <span>9</span>
+    </div>
+
+    <div class="sfbutton" id="sfnp1" onclick="document.getElementById('aa').innerHTML='(';">
+        <IMG src="images/dodgersnp1.jpg">
+        <span>(</span>
+    </div>
+
+    <div class="sfbutton" id="sfnp2" onclick="document.getElementById('aa').innerHTML=')';">
+        <IMG src="images/dodgersnp2.jpg">
+        <span>)</span>
+    </div>
+
+
+    <div class="sfbutton" id="sfce" onclick="total = Math.floor(total/10);document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgersce.jpg">
+        <span>CE</span>
+    </div>
+
+    <div class="sfbutton" id="sfc" onclick= "total=0; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgersc.jpg">
+        <span>C</span>
+    </div>
+</DIV>
+
+<script>
+function g5off(){
+        document.getElementById('sfn0').style.left='-50%';
+         document.getElementById('sfnd2').style.left='-50%';
+          document.getElementById('sfnn').style.left='-50%';
+           document.getElementById('sfne').style.left='-50%';
+            document.getElementById('sfn1').style.left='150%';
+             document.getElementById('sfn2').style.left='150%';
+              document.getElementById('sfn3').style.left='150%';
+               document.getElementById('sfnp').style.left='150%';
+                document.getElementById('sfnm').style.left='150%';
+                 document.getElementById('sfn4').style.left='-50%';
+                  document.getElementById('sfn5').style.left='-50%';
+                   document.getElementById('sfn6').style.left='-50%';
+                    document.getElementById('sfnt').style.left='-50%';
+                     document.getElementById('sfnd').style.left='-50%';
+                      document.getElementById('sfn7').style.left='150%';
+                       document.getElementById('sfn8').style.left='150%';
+                        document.getElementById('sfn9').style.left='150%';
+                         document.getElementById('sfnp1').style.left='150%';
+                          document.getElementById('sfnp2').style.left='150%';
+                           document.getElementById('sfce').style.left='-50%';
+                            document.getElementById('sfc').style.left='-50%';
+            }
+ function g5on(){
+        document.getElementById('sfn0').style.left='30%';
+         document.getElementById('sfnd2').style.left='37%';
+          document.getElementById('sfnn').style.left='44%';
+           document.getElementById('sfne').style.left='51%';
+            document.getElementById('sfn1').style.left='30%';
+             document.getElementById('sfn2').style.left='37%';
+              document.getElementById('sfn3').style.left='44%';
+               document.getElementById('sfnp').style.left='51%';
+                document.getElementById('sfnm').style.left='58%';
+                 document.getElementById('sfn4').style.left='30%';
+                  document.getElementById('sfn5').style.left='37%';
+                   document.getElementById('sfn6').style.left='44%';
+                    document.getElementById('sfnt').style.left='51%';
+                     document.getElementById('sfnd').style.left='58%';
+                      document.getElementById('sfn7').style.left='30%';
+                       document.getElementById('sfn8').style.left='37%';
+                        document.getElementById('sfn9').style.left='44%';
+                         document.getElementById('sfnp1').style.left='51%';
+                          document.getElementById('sfnp2').style.left='58%';
+                           document.getElementById('sfce').style.left='51%';
+                            document.getElementById('sfc').style.left='58%';
+                        }
+</script>
+
+
+
+
+<DIV id='rockies' onclick="g1off();g2off();g3off();g4off();g5off();g6on();">
+    <div class="crbutton" id="crn0" onclick="document.getElementById('aa').innerHTML='0';total=total*10; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers0.jpg">
+        <span>0</span>
+    </div>
+
+    <div class="crbutton" id="crnd2" onclick="document.getElementById('aa').innerHTML='.';">
+        <IMG src="images/dodgersd2.jpg">
+        <span>.</span>
+    </div>
+
+    <div class="crbutton" id="crnn" onclick="document.getElementById('aa').innerHTML='-';">
+        <IMG src="images/dodgersn.jpg">
+        <span>(-)</span>
+    </div>
+
+    <div class="crbutton" id="crne">
+        <IMG src="images/padrese.png">
+        <span>=</span>
+    </div>
+
+
+    <div class="crbutton" id="crn1" onclick="document.getElementById('aa').innerHTML='1';total=total*10+1; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers1.jpg">
+        <span>1</span>
+    </div>
+
+    <div class="crbutton" id="crn2" onclick="document.getElementById('aa').innerHTML='2';total=total*10+2; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers2.jpg">
+        <span>2</span>
+    </div>
+
+    <div class="crbutton" id="crn3" onclick="document.getElementById('aa').innerHTML='3';total=total*10+3; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers3.jpg">
+        <span>3</span>
+    </div>
+    <div class="crbutton" id="crnp"  onclick="firstNum=total; operation='+'; total = 0; document.getElementById('aa').innerHTML=firstNum+'+'">
+        <IMG src="images/dodgersp.jpg">
+        <span>+</span>
+    </div>
+
+    <div class="crbutton" id="crnm"  onclick="firstNum=total; operation='-'; total = 0; document.getElementById('aa').innerHTML=firstNum+'-'">
+        <IMG src="images/dodgersm.jpg">
+        <span>-</span>
+    </div>
+
+
+    <div class="crbutton" id="crn4" onclick="document.getElementById('aa').innerHTML='4'; total=total*10+4; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers4.jpg">
+        <span>4</span>
+    </div>
+
+    <div class="crbutton" id="crn5" onclick="document.getElementById('aa').innerHTML='5'; total=total*10+5; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers5.jpg">
+        <span>5</span>
+    </div>
+
+    <div class="crbutton" id="crn6" onclick="document.getElementById('aa').innerHTML='6'; total=total*10+6; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers6.jpg">
+        <span>6</span>
+    </div>
+
+    <div class="crbutton" id="crnt"  onclick="firstNum=total; operation='*'; total = 0; document.getElementById('aa').innerHTML=firstNum+'*'">
+        <IMG src="images/dodgerst.jpg">
+        <span>*</span>
+    </div>
+
+    <div class="crbutton" id="crnd" onclick="firstNum=total; operation='/'; total = 0; document.getElementById('aa').innerHTML=firstNum+'/'">
+        <IMG src="images/dodgersd.jpg">
+        <span>/</span>
+    </div>
+
+    <div class="crbutton" id="crn7" onclick="document.getElementById('aa').innerHTML='7'; total=total*10+7; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers7.jpg">
+        <span>7</span>
+    </div>
+
+    <div class="crbutton" id="crn8" onclick="document.getElementById('aa').innerHTML='8'; total=total*10+8; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers8.jpg">
+        <span>8</span>
+    </div>
+
+    <div class="crbutton" id="crn9" onclick="document.getElementById('aa').innerHTML='9'; total=total*10+9; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers9.jpg">
+        <span>9</span>
+    </div>
+
+    <div class="crbutton" id="crnp1" onclick="document.getElementById('aa').innerHTML='(';">
+        <IMG src="images/dodgersnp1.jpg">
+        <span>(</span>
+    </div>
+
+    <div class="crbutton" id="crnp2" onclick="document.getElementById('aa').innerHTML=')';">
+        <IMG src="images/dodgersnp2.jpg">
+        <span>)</span>
+    </div>
+
+
+    <div class="crbutton" id="crce" onclick="total = Math.floor(total/10);document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgersce.jpg">
+        <span>CE</span>
+    </div>
+
+    <div class="crbutton" id="crc" onclick= "total=0; document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgersc.jpg">
+        <span>C</span>
+    </div>
+</DIV>
+
+<script>
+function g6off(){
+        document.getElementById('crn0').style.left='-50%';
+         document.getElementById('crnd2').style.left='-50%';
+          document.getElementById('crnn').style.left='-50%';
+           document.getElementById('crne').style.left='-50%';
+            document.getElementById('crn1').style.left='150%';
+             document.getElementById('crn2').style.left='150%';
+              document.getElementById('crn3').style.left='150%';
+               document.getElementById('crnp').style.left='150%';
+                document.getElementById('crnm').style.left='150%';
+                 document.getElementById('crn4').style.left='-50%';
+                  document.getElementById('crn5').style.left='-50%';
+                   document.getElementById('crn6').style.left='-50%';
+                    document.getElementById('crnt').style.left='-50%';
+                     document.getElementById('crnd').style.left='-50%';
+                      document.getElementById('crn7').style.left='150%';
+                       document.getElementById('crn8').style.left='150%';
+                        document.getElementById('crn9').style.left='150%';
+                         document.getElementById('crnp1').style.left='150%';
+                          document.getElementById('crnp2').style.left='150%';
+                           document.getElementById('crce').style.left='-50%';
+                            document.getElementById('crc').style.left='-50%';
+            }
+ function g6on(){
+        document.getElementById('crn0').style.left='30%';
+         document.getElementById('crnd2').style.left='37%';
+          document.getElementById('crnn').style.left='44%';
+           document.getElementById('crne').style.left='51%';
+            document.getElementById('crn1').style.left='30%';
+             document.getElementById('crn2').style.left='37%';
+              document.getElementById('crn3').style.left='44%';
+               document.getElementById('crnp').style.left='51%';
+                document.getElementById('crnm').style.left='58%';
+                 document.getElementById('crn4').style.left='30%';
+                  document.getElementById('crn5').style.left='37%';
+                   document.getElementById('crn6').style.left='44%';
+                    document.getElementById('crnt').style.left='51%';
+                     document.getElementById('crnd').style.left='58%';
+                      document.getElementById('crn7').style.left='30%';
+                       document.getElementById('crn8').style.left='37%';
+                        document.getElementById('crn9').style.left='44%';
+                         document.getElementById('crnp1').style.left='51%';
+                          document.getElementById('crnp2').style.left='58%';
+                           document.getElementById('crce').style.left='51%';
+                            document.getElementById('crc').style.left='58%';
+                        }
+</script>
+
+<IMG id='NLwest' src="images/NLwest.png"></IMG>
+<SPAN id='nl'>National League</SPAN>
+<SPAN id='west'>WEST</SPAN>
+<DIV id='black'><DIV id='aa'>0</DIV></DIV>
+
+<IMG id='LAD' src="images/Dodgers.png" onclick="g1off();g2on();g3off();g4off();g5off();g6off();"></IMG>
+ <IMG id='SD' src="images/Padres.png" onclick="g1off();g2off();g3on();g4off();g5off();g6off();"></IMG>
+ <IMG id='ARI' src="images/Dbacks.png" onclick="g1off();g2off();g3off();g4on();g5off();g6off();"></IMG>
+ <IMG id='SF' src="images/Giants.png" onclick="g1off();g2off();g3off();g4off();g5on();g6off();"></IMG>
+ <IMG id='CR' src="images/Rockies.png" onclick="g1off();g2off();g3off();g4off();g5off();g6on();"></IMG>

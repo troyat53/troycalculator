@@ -1,0 +1,61 @@
+#blackt{position: fixed;width: 1000px; display: block; left: -20%; top: -50%}
+#colort{width: 30%; height: 35%; background-color: red; position: fixed; z-index: 2;left: 55%; top: 55%; border-radius: 20%;  border: 5px black dashed}
+#black{width: 4%; height: 8%; background-color: #000000; position: fixed; z-index: 3; left: 59%; top: 65%; border-radius: 5px}
+#green{width: 4%; height: 8%; background-color: #00bf63; position: fixed; z-index: 3; left: 65%; top: 65%; border-radius: 5px}
+#pink{width: 4%; height: 8%; background-color: #ff66c4; position: fixed; z-index: 3; left: 71%; top: 65%; border-radius: 5px}
+#orange{width: 4%; height: 8%; background-color: #ff751f; position: fixed; z-index: 3; left: 77%; top: 65%; border-radius: 5px}
+#grey{width: 4%; height: 8%; background-color: #545454; position: fixed; z-index: 3; left: 59%; top: 80%; border-radius: 5px}
+#white{width: 4%; height: 8%; background-color: #ffffff; position: fixed; z-index: 3; left: 65%; top: 80%; border-radius: 5px}
+#blue{width: 4%; height: 8%; background-color: #00338d; position: fixed; z-index: 3; left: 71%; top: 80%; border-radius: 5px}
+#red{width: 4%; height: 8%; background-color: #d43429; position: fixed; z-index: 3; left: 77%; top: 80%; border-radius: 5px}
+#changetcolor{ position: fixed; font-family: Inter; font-size: 40px; color: white; left: 59%; top:50%; z-index: 3;}
+
+
+#logo{position: fixed; width: 150px; height: auto; left: 13.5%; top:48%; z-index:1;}
+#logot{width: 30%; height: 35%; background-color: red; position: fixed; z-index: 3;left: 55%; top: 15%; border-radius: 20%;  border: 5px black dashed}
+#logo1{ width: 10%; height: 20%; position: fixed; z-index: 3;background-image:url('images/11.png'); background-size: cover; left: 56%; top: 30%;}
+#logo2  { width: 12%; height: 18%; position: fixed; z-index: 3; background-image:url('images/22.png'); background-size: cover;left: 64%; top: 30%;}
+#logo3  { width: 12%; height: 18%; position: fixed; z-index: 3; background-image:url('images/33.png'); background-size: cover;left: 74%; top: 30%;}
+#nologo { width: 4%; height: 8%; position: fixed; z-index: 3; background-color: white; left: 78%; top: 25%; color: black; font-family: Inter;font-size: 14px;
+text-align: center;display: flex; align-items: center; justify-content: center; border-radius: 5px}
+#chooselogo{ position: fixed; font-family:Inter; font-size: 40px; color: white; left: 62%; top:10%; z-index: 3;}
+
+
+#settings{position: fixed; width: 100px; z-index:6; right:-10px; bottom: -30px}
+#fadebox{position: fixed; width: 101%; height:101%; background-color: black; z-index: 4;  left: -1%; top: -1%;
+  opacity: 0.15; display: none;}
+
+
+#popup{position: fixed; width: 40%; height: 80%; background-color:#2E110B; z-index: 5; right: 5%; top: 15%;display: none;
+  flex-direction: column; align-items: center; justify-content:flex-start; text-align: center;}
+#close{position: absolute; top: 10px; right: 20px; font-size: 24px;color: red;}
+
+
+#bgcolortext{color:white; font-family: Inter; font-size: 30px; margin-bottom:0px}
+#bgblack{width: 40px; height: 40px; margin: 5px; border-radius: 5px;}
+#bgwhite{width: 40px; height: 40px; margin: 5px; border-radius: 5px;}
+#bggrey{width: 40px; height: 40px; margin: 5px; border-radius: 5px;}
+#bgblue{width: 40px; height: 40px; margin: 5px; border-radius: 5px;}
+#bgbrown{width: 40px; height: 40px; margin: 5px; border-radius: 5px;}
+#bgrow{display: flex; flex-direction: row; gap: 15px;}
+
+
+@font-face {font-family: creepy; src: url(Heartless.ttf);}
+#fonttext { color: white; font-family: Inter; font-size: 30px; margin-top: 40px;}
+#fontrow{ display: flex; flex-direction: row; gap: 15px; align-items: center;}
+#fontroboto{ font-family: Roboto;color: white; border-radius: 5px; font-size: 24px;}
+#fontcurlz{ font-family: Curlz MT;color: white; border-radius: 5px; font-size: 24px;}
+#fontcolonna{ font-family: Colonna MT;color: white; border-radius: 5px; font-size: 24px;}
+#fontcreepy{ font-family: Creepy;color: white; border-radius: 5px; font-size: 24px;}
+
+
+#fontcolor{color: white; font-family: Inter; font-size: 30px; margin-top: 60px;}
+#fontcolorrow{display: flex; flex-direction: row; align-items: center; gap: 15px;}
+#fblack{width: 40px; height: 40px; margin: 5px; border-radius: 5px;}
+#fwhite{width: 40px; height: 40px; margin: 5px; border-radius: 5px;}
+#fred{width: 40px; height: 40px; margin: 5px; border-radius: 5px;}
+#fblue{width: 40px; height: 40px; margin: 5px; border-radius: 5px;}
+#fgrey{width: 40px; height: 40px; margin: 5px; border-radius: 5px;}
+
+
+

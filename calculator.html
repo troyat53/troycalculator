@@ -1,0 +1,1585 @@
+<HTML>
+<HEAD>
+<link rel="stylesheet" href="calculator.css">
+</HEAD>
+<body style="background-color:transparent;">
+<div id="bg"></div>
+
+<script>
+    var total=0;
+    var firstNum=0;
+    var operation="";
+    var decimal=false;
+    var decimalPlace=1;
+    function changeBG(image) {
+    document.getElementById('bg').style.opacity=0;
+
+    setTimeout(function() {
+        if (image=='') {
+            document.getElementById('bg').style.backgroundImage='none';}
+        else {
+            document.getElementById('bg').style.backgroundImage="url('"+image+"')";}
+
+        document.getElementById('bg').style.opacity=image==''?0:0.6;}, 300);
+    }
+</script>
+
+<DIV id='normal' onclick="g1on();g2off();g3off();g4off();g5off();g6off();changeBG('');">
+    <SPAN id='normalt'>default</SPAN>
+
+<div class="button" id="n0" onclick="
+    if (decimal==false) {total=total*10;}
+    else { total=total/0(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+    document.getElementById('aa').innerHTML=total;">              
+    <span>0</span>
+    </div>
+
+    <div class="button" id="nd2" onclick="document.getElementById('aa').innerHTML='.'; if (decimal == false) {
+    decimal = true; document.getElementById('aa').innerHTML = total + '.';}">
+    <span>.</span>
+    </div>
+
+    <div class="button" id="nn" onclick="total = total*-1; document.getElementById('aa').innerHTML=total;">
+        <span>(-)</span>
+    </div>
+
+    <div class="button" id="ne" onclick=" if (operation == '+') { total = firstNum + total; }
+                                        else if (operation == '-') {total = firstNum - total;}
+                                        else if (operation == '*') {total = firstNum * total;}
+                                        else if (operation == '/') {total = firstNum / total;}
+
+    document.getElementById('aa').innerHTML = total;">
+        <span>=</span>
+    </div>
+
+
+    <div class="button" id="n1" onclick="
+    if (decimal==false) {total=total*10+1;}
+    else { total=total+1/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+    document.getElementById('aa').innerHTML=total;event.stopPropagation();">
+        <span>1</span>
+    </div>
+
+  <div class="button" id="n2" onclick="
+    if (decimal==false) {total=total*10+2;}
+    else { total=total+2/(10 ** decimalPlace); decimalPlace = decimalPlace+1;}
+    document.getElementById('aa').innerHTML=total;">
+        <span>2</span>
+    </div>
+
+<div class="button" id="n3" onclick="
+    if (decimal==false) {total=total*10+3;}
+    else { total=total+3/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+    document.getElementById('aa').innerHTML=total;">      
+    <span>3</span>
+    </div>
+
+    <div class="button" id="np" onclick=" if (operation == '+') {total = firstNum + total;}
+    else if (operation == '-') {total = firstNum - total;}
+    else if (operation == '*') {total = firstNum * total;}
+    else if (operation == '/') {total = firstNum / total;}
+
+    firstNum = total;
+    operation = '+';
+    total = 0;
+    decimal = false;
+    decimalPlace = 1;
+
+    document.getElementById('aa').innerHTML = firstNum + '+';">
+        <span>+</span>
+    </div>
+
+    <div class="button" id="nm" onclick=" if (operation == '+') {total = firstNum + total;}
+    else if (operation == '-') {total = firstNum - total;}
+    else if (operation == '*') {total = firstNum * total;}
+    else if (operation == '/') {total = firstNum / total;}
+
+    firstNum = total;
+    operation = '-';
+    total = 0;
+    decimal = false;
+    decimalPlace = 1;
+
+    document.getElementById('aa').innerHTML = firstNum + '-';">
+        <span>-</span>
+    </div>
+
+
+<div class="button" id="n4" onclick="
+    if (decimal==false) {total=total*10+4;}
+    else { total=total+4/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+    document.getElementById('aa').innerHTML=total;">        
+    <span>4</span>
+    </div>
+
+<div class="button" id="n5" onclick="
+    if (decimal==false) {total=total*10+5;}
+    else { total=total+5/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+    document.getElementById('aa').innerHTML=total;">        
+    <span>5</span>
+    </div>
+
+<div class="button" id="n6" onclick="
+    if (decimal==false) {total=total*10+6;}
+    else { total=total+6/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+    document.getElementById('aa').innerHTML=total;">         
+    <span>6</span>
+    </div>
+
+    <div class="button" id="nt"   onclick=" if (operation == '+') {total = firstNum + total;}
+    else if (operation == '-') {total = firstNum - total;}
+    else if (operation == '*') {total = firstNum * total;}
+    else if (operation == '/') {total = firstNum / total;}
+
+    firstNum = total;
+    operation = '*';
+    total = 0;
+    decimal = false;
+    decimalPlace = 1;
+
+    document.getElementById('aa').innerHTML = firstNum + '*';">
+        <span>*</span>
+    </div>
+
+    <div class="button" id="nd"   onclick=" if (operation == '+') {total = firstNum + total;}
+    else if (operation == '-') {total = firstNum - total;}
+    else if (operation == '*') {total = firstNum * total;}
+    else if (operation == '/') {total = firstNum / total;}
+
+    firstNum = total;
+    operation = '/';
+    total = 0;
+    decimal = false;
+    decimalPlace = 1;
+
+    document.getElementById('aa').innerHTML = firstNum + '/';">
+        <span>/</span>
+    </div>
+
+
+<div class="button" id="n7" onclick="
+    if (decimal==false) {total=total*10+7;}
+    else { total=total+7/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+    document.getElementById('aa').innerHTML=total;">      
+    <span>7</span>
+    </div>
+
+<div class="button" id="n8" onclick="
+    if (decimal==false) {total=total*10+8;}
+    else { total=total+8/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+    document.getElementById('aa').innerHTML=total;">              
+    <span>8</span>
+    </div>
+
+<div class="button" id="n9" onclick="
+    if (decimal==false) {total=total*10+9;}
+    else { total=total+9/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+    document.getElementById('aa').innerHTML=total;">              
+    <span>9</span>
+    </div>
+
+   <div class="button" id="np1" onclick="
+    total = total * total;
+    document.getElementById('aa').innerHTML = total;">
+    <span>x²</span>
+    </div>
+
+    <div class="button" id="np2" onclick="
+    total = Math.sqrt(total);
+    document.getElementById('aa').innerHTML = total;">
+    <span>√</span>
+    </div>
+
+
+    <div class="button" id="ce" onclick="total = Math.floor(total/10);document.getElementById('aa').innerHTML=total;">
+        <span>CE</span>
+    </div>
+
+    <div class="button" id="c" onclick="total=0;  firstNum=0; operation='';document.getElementById('aa').innerHTML=total; decimal = false; decimalPlace = 1;">
+        <span>C</span>
+    </div>
+</DIV>
+
+<script>
+function g1off(){
+        document.getElementById('n0').style.left='-50%';
+         document.getElementById('nd2').style.left='-50%';
+          document.getElementById('nn').style.left='-50%';
+           document.getElementById('ne').style.left='-50%';
+            document.getElementById('n1').style.left='150%';
+             document.getElementById('n2').style.left='150%';
+              document.getElementById('n3').style.left='150%';
+               document.getElementById('np').style.left='150%';
+                document.getElementById('nm').style.left='150%';
+                 document.getElementById('n4').style.left='-50%';
+                  document.getElementById('n5').style.left='-50%';
+                   document.getElementById('n6').style.left='-50%';
+                    document.getElementById('nt').style.left='-50%';
+                     document.getElementById('nd').style.left='-50%';
+                      document.getElementById('n7').style.left='150%';
+                       document.getElementById('n8').style.left='150%';
+                        document.getElementById('n9').style.left='150%';
+                         document.getElementById('np1').style.left='150%';
+                          document.getElementById('np2').style.left='150%';
+                           document.getElementById('ce').style.left='-50%';
+                            document.getElementById('c').style.left='-50%';
+            }
+ function g1on(){
+        document.getElementById('n0').style.left='30%';
+         document.getElementById('nd2').style.left='37%';
+          document.getElementById('nn').style.left='44%';
+           document.getElementById('ne').style.left='51%';
+            document.getElementById('n1').style.left='30%';
+             document.getElementById('n2').style.left='37%';
+              document.getElementById('n3').style.left='44%';
+               document.getElementById('np').style.left='51%';
+                document.getElementById('nm').style.left='58%';
+                 document.getElementById('n4').style.left='30%';
+                  document.getElementById('n5').style.left='37%';
+                   document.getElementById('n6').style.left='44%';
+                    document.getElementById('nt').style.left='51%';
+                     document.getElementById('nd').style.left='58%';
+                      document.getElementById('n7').style.left='30%';
+                       document.getElementById('n8').style.left='37%';
+                        document.getElementById('n9').style.left='44%';
+                         document.getElementById('np1').style.left='51%';
+                          document.getElementById('np2').style.left='58%';
+                           document.getElementById('ce').style.left='51%';
+                            document.getElementById('c').style.left='58%';
+                        }
+</script>
+
+
+
+
+<DIV id='dodgers' onclick="g1off();g2on();g3off();g4off();g5off();g6off();">
+
+    <div class="labutton" id="lan0" onclick="
+        if (decimal==false) {total=total*10;}
+        else {total=total+0/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers0.jpg">
+        <span>0</span>
+    </div>
+
+    <div class="labutton" id="land2" onclick="
+        if (decimal==false) {
+            decimal=true;
+            document.getElementById('aa').innerHTML=total+'.';
+        }">
+        <IMG src="images/dodgersd2.jpg">
+        <span>.</span>
+    </div>
+
+    <div class="labutton" id="lann" onclick="
+        total=total*-1;
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgersn.jpg">
+        <span>(-)</span>
+    </div>
+
+    <div class="labutton" id="lane" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgerse.jpg">
+        <span>=</span>
+    </div>
+
+    <div class="labutton" id="lan1" onclick="
+        if (decimal==false) {total=total*10+1;}
+        else {total=total+1/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers1.jpg">
+        <span>1</span>
+    </div>
+
+    <div class="labutton" id="lan2" onclick="
+        if (decimal==false) {total=total*10+2;}
+        else {total=total+2/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers2.jpg">
+        <span>2</span>
+    </div>
+
+    <div class="labutton" id="lan3" onclick="
+        if (decimal==false) {total=total*10+3;}
+        else {total=total+3/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers3.jpg">
+        <span>3</span>
+    </div>
+
+    <div class="labutton" id="lanp" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='+';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'+';">
+        <IMG src="images/dodgersp.jpg">
+        <span>+</span>
+    </div>
+
+    <div class="labutton" id="lanm" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='-';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'-';">
+        <IMG src="images/dodgersm.jpg">
+        <span>-</span>
+    </div>
+
+    <div class="labutton" id="lan4" onclick="
+        if (decimal==false) {total=total*10+4;}
+        else {total=total+4/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers4.jpg">
+        <span>4</span>
+    </div>
+
+    <div class="labutton" id="lan5" onclick="
+        if (decimal==false) {total=total*10+5;}
+        else {total=total+5/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers5.jpg">
+        <span>5</span>
+    </div>
+
+    <div class="labutton" id="lan6" onclick="
+        if (decimal==false) {total=total*10+6;}
+        else {total=total+6/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers6.jpg">
+        <span>6</span>
+    </div>
+
+    <div class="labutton" id="lant" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='*';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'*';">
+        <IMG src="images/dodgerst.jpg">
+        <span>*</span>
+    </div>
+
+    <div class="labutton" id="land" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='/';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'/';">
+        <IMG src="images/dodgersd.jpg">
+        <span>/</span>
+    </div>
+
+    <div class="labutton" id="lan7" onclick="
+        if (decimal==false) {total=total*10+7;}
+        else {total=total+7/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers7.jpg">
+        <span>7</span>
+    </div>
+
+    <div class="labutton" id="lan8" onclick="
+        if (decimal==false) {total=total*10+8;}
+        else {total=total+8/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers8.jpg">
+        <span>8</span>
+    </div>
+
+    <div class="labutton" id="lan9" onclick="
+        if (decimal==false) {total=total*10+9;}
+        else {total=total+9/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgers9.jpg">
+        <span>9</span>
+    </div>
+
+   <div class="labutton" id="lanp1" onclick="
+    total = total * total;
+    document.getElementById('aa').innerHTML = total;">
+    <IMG src="images/dodgersnp1.jpg">
+    <span>x²</span>
+</div>
+
+<div class="labutton" id="lanp2" onclick="
+    total = Math.sqrt(total);
+    document.getElementById('aa').innerHTML = total;">
+    <IMG src="images/dodgersnp2.jpg">
+    <span>√</span>
+</div>
+    <div class="labutton" id="lace" onclick="
+        total=Math.floor(total/10);
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgersce.jpg">
+        <span>CE</span>
+    </div>
+
+    <div class="labutton" id="lac" onclick="
+        total=0;
+        firstNum=0;
+        operation='';
+        decimal=false;
+        decimalPlace=1;
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dodgersc.jpg">
+        <span>C</span>
+    </div>
+
+
+</DIV>
+
+<script>
+function g2off(){
+        document.getElementById('lan0').style.left='-50%';
+         document.getElementById('land2').style.left='-50%';
+          document.getElementById('lann').style.left='-50%';
+           document.getElementById('lane').style.left='-50%';
+            document.getElementById('lan1').style.left='150%';
+             document.getElementById('lan2').style.left='150%';
+              document.getElementById('lan3').style.left='150%';
+               document.getElementById('lanp').style.left='150%';
+                document.getElementById('lanm').style.left='150%';
+                 document.getElementById('lan4').style.left='-50%';
+                  document.getElementById('lan5').style.left='-50%';
+                   document.getElementById('lan6').style.left='-50%';
+                    document.getElementById('lant').style.left='-50%';
+                     document.getElementById('land').style.left='-50%';
+                      document.getElementById('lan7').style.left='150%';
+                       document.getElementById('lan8').style.left='150%';
+                        document.getElementById('lan9').style.left='150%';
+                         document.getElementById('lanp1').style.left='150%';
+                          document.getElementById('lanp2').style.left='150%';
+                           document.getElementById('lace').style.left='-50%';
+                            document.getElementById('lac').style.left='-50%';
+}
+
+function g2on(){
+        document.getElementById('lan0').style.left='30%';
+         document.getElementById('land2').style.left='37%';
+          document.getElementById('lann').style.left='44%';
+           document.getElementById('lane').style.left='51%';
+            document.getElementById('lan1').style.left='30%';
+             document.getElementById('lan2').style.left='37%';
+              document.getElementById('lan3').style.left='44%';
+               document.getElementById('lanp').style.left='51%';
+                document.getElementById('lanm').style.left='58%';
+                 document.getElementById('lan4').style.left='30%';
+                  document.getElementById('lan5').style.left='37%';
+                   document.getElementById('lan6').style.left='44%';
+                    document.getElementById('lant').style.left='51%';
+                     document.getElementById('land').style.left='58%';
+                      document.getElementById('lan7').style.left='30%';
+                       document.getElementById('lan8').style.left='37%';
+                        document.getElementById('lan9').style.left='44%';
+                         document.getElementById('lanp1').style.left='51%';
+                          document.getElementById('lanp2').style.left='58%';
+                           document.getElementById('lace').style.left='51%';
+                            document.getElementById('lac').style.left='58%';
+}
+</script>
+
+
+
+<DIV id='padres' onclick="g1off();g2off();g3on();g4off();g5off();g6off();">
+
+    <div class="sdbutton" id="sdn0" onclick="
+        if (decimal==false) {total=total*10;}
+        else {total=total+0/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/padres0.jpg">
+        <span>0</span>
+    </div>
+
+    <div class="sdbutton" id="sdnd2" onclick="
+        if (decimal==false) {
+            decimal=true;
+            document.getElementById('aa').innerHTML=total+'.';
+        }">
+        <IMG src="images/padresd2.jpg">
+        <span>.</span>
+    </div>
+
+    <div class="sdbutton" id="sdnn" onclick="
+        total=total*-1;
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/padresn.jpg">
+        <span>(-)</span>
+    </div>
+
+    <div class="sdbutton" id="sdne" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/padrese.png">
+        <span>=</span>
+    </div>
+
+    <div class="sdbutton" id="sdn1" onclick="
+        if (decimal==false) {total=total*10+1;}
+        else {total=total+1/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/padres1.jpg">
+        <span>1</span>
+    </div>
+
+    <div class="sdbutton" id="sdn2" onclick="
+        if (decimal==false) {total=total*10+2;}
+        else {total=total+2/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/padres2.jpg">
+        <span>2</span>
+    </div>
+
+    <div class="sdbutton" id="sdn3" onclick="
+        if (decimal==false) {total=total*10+3;}
+        else {total=total+3/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/padres3.jpg">
+        <span>3</span>
+    </div>
+
+    <div class="sdbutton" id="sdnp" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='+';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'+';">
+        <IMG src="images/padresp.jpg">
+        <span>+</span>
+    </div>
+
+    <div class="sdbutton" id="sdnm" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='-';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'-';">
+        <IMG src="images/padresm.jpg">
+        <span>-</span>
+    </div>
+
+    <div class="sdbutton" id="sdn4" onclick="
+        if (decimal==false) {total=total*10+4;}
+        else {total=total+4/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/padres4.jpg">
+        <span>4</span>
+    </div>
+
+    <div class="sdbutton" id="sdn5" onclick="
+        if (decimal==false) {total=total*10+5;}
+        else {total=total+5/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/padres5.jpg">
+        <span>5</span>
+    </div>
+
+    <div class="sdbutton" id="sdn6" onclick="
+        if (decimal==false) {total=total*10+6;}
+        else {total=total+6/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/padres6.jpg">
+        <span>6</span>
+    </div>
+
+    <div class="sdbutton" id="sdnt" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='*';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'*';">
+        <IMG src="images/padrest.jpg">
+        <span>*</span>
+    </div>
+
+    <div class="sdbutton" id="sdnd" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='/';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'/';">
+        <IMG src="images/padresd.jpg">
+        <span>/</span>
+    </div>
+
+    <div class="sdbutton" id="sdn7" onclick="
+        if (decimal==false) {total=total*10+7;}
+        else {total=total+7/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/padres7.jpg">
+        <span>7</span>
+    </div>
+
+    <div class="sdbutton" id="sdn8" onclick="
+        if (decimal==false) {total=total*10+8;}
+        else {total=total+8/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/padres8.jpg">
+        <span>8</span>
+    </div>
+
+    <div class="sdbutton" id="sdn9" onclick="
+        if (decimal==false) {total=total*10+9;}
+        else {total=total+9/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/padres9.jpg">
+        <span>9</span>
+    </div>
+
+    <div class="sdbutton" id="sdnp1" onclick="
+        total=total*total;
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/padresnp1.jpg">
+        <span>x²</span>
+    </div>
+
+    <div class="sdbutton" id="sdnp2" onclick="
+        total=Math.sqrt(total);
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/padresnp2.jpg">
+        <span>√</span>
+    </div>
+
+    <div class="sdbutton" id="sdce" onclick="
+        total=Math.floor(total/10);
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/padresce.jpg">
+        <span>CE</span>
+    </div>
+
+    <div class="sdbutton" id="sdc" onclick="
+        total=0;
+        firstNum=0;
+        operation='';
+        decimal=false;
+        decimalPlace=1;
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/padresc.jpg">
+        <span>C</span>
+    </div>
+
+</DIV>
+
+
+<script>
+function g3off(){
+        document.getElementById('sdn0').style.left='-50%';
+         document.getElementById('sdnd2').style.left='-50%';
+          document.getElementById('sdnn').style.left='-50%';
+           document.getElementById('sdne').style.left='-50%';
+            document.getElementById('sdn1').style.left='150%';
+             document.getElementById('sdn2').style.left='150%';
+              document.getElementById('sdn3').style.left='150%';
+               document.getElementById('sdnp').style.left='150%';
+                document.getElementById('sdnm').style.left='150%';
+                 document.getElementById('sdn4').style.left='-50%';
+                  document.getElementById('sdn5').style.left='-50%';
+                   document.getElementById('sdn6').style.left='-50%';
+                    document.getElementById('sdnt').style.left='-50%';
+                     document.getElementById('sdnd').style.left='-50%';
+                      document.getElementById('sdn7').style.left='150%';
+                       document.getElementById('sdn8').style.left='150%';
+                        document.getElementById('sdn9').style.left='150%';
+                         document.getElementById('sdnp1').style.left='150%';
+                          document.getElementById('sdnp2').style.left='150%';
+                           document.getElementById('sdce').style.left='-50%';
+                            document.getElementById('sdc').style.left='-50%';
+            }
+ function g3on(){
+        document.getElementById('sdn0').style.left='30%';
+         document.getElementById('sdnd2').style.left='37%';
+          document.getElementById('sdnn').style.left='44%';
+           document.getElementById('sdne').style.left='51%';
+            document.getElementById('sdn1').style.left='30%';
+             document.getElementById('sdn2').style.left='37%';
+              document.getElementById('sdn3').style.left='44%';
+               document.getElementById('sdnp').style.left='51%';
+                document.getElementById('sdnm').style.left='58%';
+                 document.getElementById('sdn4').style.left='30%';
+                  document.getElementById('sdn5').style.left='37%';
+                   document.getElementById('sdn6').style.left='44%';
+                    document.getElementById('sdnt').style.left='51%';
+                     document.getElementById('sdnd').style.left='58%';
+                      document.getElementById('sdn7').style.left='30%';
+                       document.getElementById('sdn8').style.left='37%';
+                        document.getElementById('sdn9').style.left='44%';
+                         document.getElementById('sdnp1').style.left='51%';
+                          document.getElementById('sdnp2').style.left='58%';
+                           document.getElementById('sdce').style.left='51%';
+                            document.getElementById('sdc').style.left='58%';
+                        }
+</script>
+
+
+
+
+
+<DIV id='dbacks' onclick="g1off();g2off();g3off();g4on();g5off();g6off();">
+
+    <div class="azbutton" id="azn0" onclick="
+        if (decimal==false) {total=total*10;}
+        else {total=total+0/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dbacks0.jpg">
+        <span>0</span>
+    </div>
+
+    <div class="azbutton" id="aznd2" onclick="
+        if (decimal==false) {
+            decimal=true;
+            document.getElementById('aa').innerHTML=total+'.';
+        }">
+        <IMG src="images/dbacksd2.jpg">
+        <span>.</span>
+    </div>
+
+    <div class="azbutton" id="aznn" onclick="
+        total=total*-1;
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dbacksn.jpg">
+        <span>(-)</span>
+    </div>
+
+    <div class="azbutton" id="azne" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dbackse.png">
+        <span>=</span>
+    </div>
+
+    <div class="azbutton" id="azn1" onclick="
+        if (decimal==false) {total=total*10+1;}
+        else {total=total+1/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dbacks1.jpg">
+        <span>1</span>
+    </div>
+
+    <div class="azbutton" id="azn2" onclick="
+        if (decimal==false) {total=total*10+2;}
+        else {total=total+2/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dbacks2.jpg">
+        <span>2</span>
+    </div>
+
+    <div class="azbutton" id="azn3" onclick="
+        if (decimal==false) {total=total*10+3;}
+        else {total=total+3/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dbacks3.jpg">
+        <span>3</span>
+    </div>
+
+    <div class="azbutton" id="aznp" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='+';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'+';">
+        <IMG src="images/dbacksp.jpg">
+        <span>+</span>
+    </div>
+
+    <div class="azbutton" id="aznm" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='-';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'-';">
+        <IMG src="images/dbacksm.jpg">
+        <span>-</span>
+    </div>
+
+    <div class="azbutton" id="azn4" onclick="
+        if (decimal==false) {total=total*10+4;}
+        else {total=total+4/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dbacks4.jpg">
+        <span>4</span>
+    </div>
+
+    <div class="azbutton" id="azn5" onclick="
+        if (decimal==false) {total=total*10+5;}
+        else {total=total+5/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dbacks5.jpg">
+        <span>5</span>
+    </div>
+
+    <div class="azbutton" id="azn6" onclick="
+        if (decimal==false) {total=total*10+6;}
+        else {total=total+6/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dbacks6.jpg">
+        <span>6</span>
+    </div>
+
+    <div class="azbutton" id="aznt" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='*';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'*';">
+        <IMG src="images/dbackst.jpg">
+        <span>*</span>
+    </div>
+
+    <div class="azbutton" id="aznd" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='/';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'/';">
+        <IMG src="images/dbacksd.jpg">
+        <span>/</span>
+    </div>
+
+    <div class="azbutton" id="azn7" onclick="
+        if (decimal==false) {total=total*10+7;}
+        else {total=total+7/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dbacks7.jpg">
+        <span>7</span>
+    </div>
+
+    <div class="azbutton" id="azn8" onclick="
+        if (decimal==false) {total=total*10+8;}
+        else {total=total+8/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dbacks8.jpg">
+        <span>8</span>
+    </div>
+
+    <div class="azbutton" id="azn9" onclick="
+        if (decimal==false) {total=total*10+9;}
+        else {total=total+9/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dbacks9.jpg">
+        <span>9</span>
+    </div>
+
+    <div class="azbutton" id="aznp1" onclick="
+        total=total*total;
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dbacksnp1.jpg">
+        <span>x²</span>
+    </div>
+
+    <div class="azbutton" id="aznp2" onclick="
+        total=Math.sqrt(total);
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dbacksnp2.jpg">
+        <span>√</span>
+    </div>
+
+    <div class="azbutton" id="azce" onclick="
+        total=Math.floor(total/10);
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dbacksce.jpg">
+        <span>CE</span>
+    </div>
+
+    <div class="azbutton" id="azc" onclick="
+        total=0;
+        firstNum=0;
+        operation='';
+        decimal=false;
+        decimalPlace=1;
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/dbacksc.jpg">
+        <span>C</span>
+    </div>
+
+</DIV>
+
+
+<script>
+function g4off(){
+        document.getElementById('azn0').style.left='-50%';
+         document.getElementById('aznd2').style.left='-50%';
+          document.getElementById('aznn').style.left='-50%';
+           document.getElementById('azne').style.left='-50%';
+            document.getElementById('azn1').style.left='150%';
+             document.getElementById('azn2').style.left='150%';
+              document.getElementById('azn3').style.left='150%';
+               document.getElementById('aznp').style.left='150%';
+                document.getElementById('aznm').style.left='150%';
+                 document.getElementById('azn4').style.left='-50%';
+                  document.getElementById('azn5').style.left='-50%';
+                   document.getElementById('azn6').style.left='-50%';
+                    document.getElementById('aznt').style.left='-50%';
+                     document.getElementById('aznd').style.left='-50%';
+                      document.getElementById('azn7').style.left='150%';
+                       document.getElementById('azn8').style.left='150%';
+                        document.getElementById('azn9').style.left='150%';
+                         document.getElementById('aznp1').style.left='150%';
+                          document.getElementById('aznp2').style.left='150%';
+                           document.getElementById('azce').style.left='-50%';
+                            document.getElementById('azc').style.left='-50%';
+            }
+ function g4on(){
+        document.getElementById('azn0').style.left='30%';
+         document.getElementById('aznd2').style.left='37%';
+          document.getElementById('aznn').style.left='44%';
+           document.getElementById('azne').style.left='51%';
+            document.getElementById('azn1').style.left='30%';
+             document.getElementById('azn2').style.left='37%';
+              document.getElementById('azn3').style.left='44%';
+               document.getElementById('aznp').style.left='51%';
+                document.getElementById('aznm').style.left='58%';
+                 document.getElementById('azn4').style.left='30%';
+                  document.getElementById('azn5').style.left='37%';
+                   document.getElementById('azn6').style.left='44%';
+                    document.getElementById('aznt').style.left='51%';
+                     document.getElementById('aznd').style.left='58%';
+                      document.getElementById('azn7').style.left='30%';
+                       document.getElementById('azn8').style.left='37%';
+                        document.getElementById('azn9').style.left='44%';
+                         document.getElementById('aznp1').style.left='51%';
+                          document.getElementById('aznp2').style.left='58%';
+                           document.getElementById('azce').style.left='51%';
+                            document.getElementById('azc').style.left='58%';
+                        }
+</script>
+
+
+
+
+<DIV id='giants' onclick="g1off();g2off();g3off();g4off();g5on();g6off();">
+
+    <div class="sfbutton" id="sfn0" onclick="
+        if (decimal==false) {total=total*10;}
+        else {total=total+0/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/giants0.jpg">
+        <span>0</span>
+    </div>
+
+    <div class="sfbutton" id="sfnd2" onclick="
+        if (decimal==false) {
+            decimal=true;
+            document.getElementById('aa').innerHTML=total+'.';
+        }">
+        <IMG src="images/giantsd2.jpg">
+        <span>.</span>
+    </div>
+
+    <div class="sfbutton" id="sfnn" onclick="
+        total=total*-1;
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/giantsn.jpg">
+        <span>(-)</span>
+    </div>
+
+    <div class="sfbutton" id="sfne" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/giantse.png">
+        <span>=</span>
+    </div>
+
+    <div class="sfbutton" id="sfn1" onclick="
+        if (decimal==false) {total=total*10+1;}
+        else {total=total+1/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/giants1.jpg">
+        <span>1</span>
+    </div>
+
+    <div class="sfbutton" id="sfn2" onclick="
+        if (decimal==false) {total=total*10+2;}
+        else {total=total+2/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/giants2.jpg">
+        <span>2</span>
+    </div>
+
+    <div class="sfbutton" id="sfn3" onclick="
+        if (decimal==false) {total=total*10+3;}
+        else {total=total+3/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/giants3.jpg">
+        <span>3</span>
+    </div>
+
+    <div class="sfbutton" id="sfnp" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='+';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'+';">
+        <IMG src="images/giantsp.jpg">
+        <span>+</span>
+    </div>
+
+    <div class="sfbutton" id="sfnm" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='-';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'-';">
+        <IMG src="images/giantsm.jpg">
+        <span>-</span>
+    </div>
+
+    <div class="sfbutton" id="sfn4" onclick="
+        if (decimal==false) {total=total*10+4;}
+        else {total=total+4/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/giants4.jpg">
+        <span>4</span>
+    </div>
+
+    <div class="sfbutton" id="sfn5" onclick="
+        if (decimal==false) {total=total*10+5;}
+        else {total=total+5/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/giants5.jpg">
+        <span>5</span>
+    </div>
+
+    <div class="sfbutton" id="sfn6" onclick="
+        if (decimal==false) {total=total*10+6;}
+        else {total=total+6/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/giants6.jpg">
+        <span>6</span>
+    </div>
+
+    <div class="sfbutton" id="sfnt" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='*';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'*';">
+        <IMG src="images/giantst.jpg">
+        <span>*</span>
+    </div>
+
+    <div class="sfbutton" id="sfnd" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='/';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'/';">
+        <IMG src="images/giantsd.jpg">
+        <span>/</span>
+    </div>
+
+    <div class="sfbutton" id="sfn7" onclick="
+        if (decimal==false) {total=total*10+7;}
+        else {total=total+7/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/giants7.jpg">
+        <span>7</span>
+    </div>
+
+    <div class="sfbutton" id="sfn8" onclick="
+        if (decimal==false) {total=total*10+8;}
+        else {total=total+8/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/giants8.jpg">
+        <span>8</span>
+    </div>
+
+    <div class="sfbutton" id="sfn9" onclick="
+        if (decimal==false) {total=total*10+9;}
+        else {total=total+9/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/giants9.jpg">
+        <span>9</span>
+    </div>
+
+    <div class="sfbutton" id="sfnp1" onclick="
+        total=total*total;
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/giantsnp1.jpg">
+        <span>x²</span>
+    </div>
+
+    <div class="sfbutton" id="sfnp2" onclick="
+        total=Math.sqrt(total);
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/giantsnp2.jpg">
+        <span>√</span>
+    </div>
+
+    <div class="sfbutton" id="sfce" onclick="
+        total=Math.floor(total/10);
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/giantsce.jpg">
+        <span>CE</span>
+    </div>
+
+    <div class="sfbutton" id="sfc" onclick="
+        total=0;
+        firstNum=0;
+        operation='';
+        decimal=false;
+        decimalPlace=1;
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/giantsc.jpg">
+        <span>C</span>
+    </div>
+
+</DIV>
+
+
+<script>
+function g5off(){
+        document.getElementById('sfn0').style.left='-50%';
+         document.getElementById('sfnd2').style.left='-50%';
+          document.getElementById('sfnn').style.left='-50%';
+           document.getElementById('sfne').style.left='-50%';
+            document.getElementById('sfn1').style.left='150%';
+             document.getElementById('sfn2').style.left='150%';
+              document.getElementById('sfn3').style.left='150%';
+               document.getElementById('sfnp').style.left='150%';
+                document.getElementById('sfnm').style.left='150%';
+                 document.getElementById('sfn4').style.left='-50%';
+                  document.getElementById('sfn5').style.left='-50%';
+                   document.getElementById('sfn6').style.left='-50%';
+                    document.getElementById('sfnt').style.left='-50%';
+                     document.getElementById('sfnd').style.left='-50%';
+                      document.getElementById('sfn7').style.left='150%';
+                       document.getElementById('sfn8').style.left='150%';
+                        document.getElementById('sfn9').style.left='150%';
+                         document.getElementById('sfnp1').style.left='150%';
+                          document.getElementById('sfnp2').style.left='150%';
+                           document.getElementById('sfce').style.left='-50%';
+                            document.getElementById('sfc').style.left='-50%';
+            }
+ function g5on(){
+        document.getElementById('sfn0').style.left='30%';
+         document.getElementById('sfnd2').style.left='37%';
+          document.getElementById('sfnn').style.left='44%';
+           document.getElementById('sfne').style.left='51%';
+            document.getElementById('sfn1').style.left='30%';
+             document.getElementById('sfn2').style.left='37%';
+              document.getElementById('sfn3').style.left='44%';
+               document.getElementById('sfnp').style.left='51%';
+                document.getElementById('sfnm').style.left='58%';
+                 document.getElementById('sfn4').style.left='30%';
+                  document.getElementById('sfn5').style.left='37%';
+                   document.getElementById('sfn6').style.left='44%';
+                    document.getElementById('sfnt').style.left='51%';
+                     document.getElementById('sfnd').style.left='58%';
+                      document.getElementById('sfn7').style.left='30%';
+                       document.getElementById('sfn8').style.left='37%';
+                        document.getElementById('sfn9').style.left='44%';
+                         document.getElementById('sfnp1').style.left='51%';
+                          document.getElementById('sfnp2').style.left='58%';
+                           document.getElementById('sfce').style.left='51%';
+                            document.getElementById('sfc').style.left='58%';
+                        }
+</script>
+
+
+
+
+<
+<DIV id='rockies' onclick="g1off();g2off();g3off();g4off();g5off();g6on();">
+
+    <div class="crbutton" id="crn0" onclick="
+        if (decimal==false) {total=total*10;}
+        else {total=total+0/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/rockies0.jpg">
+        <span>0</span>
+    </div>
+
+    <div class="crbutton" id="crnd2" onclick="
+        if (decimal==false) {
+            decimal=true;
+            document.getElementById('aa').innerHTML=total+'.';
+        }">
+        <IMG src="images/rockiesd2.jpg">
+        <span>.</span>
+    </div>
+
+    <div class="crbutton" id="crnn" onclick="
+        total=total*-1;
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/rockiesn.jpg">
+        <span>(-)</span>
+    </div>
+
+    <div class="crbutton" id="crne" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/rockiese.png">
+        <span>=</span>
+    </div>
+
+    <div class="crbutton" id="crn1" onclick="
+        if (decimal==false) {total=total*10+1;}
+        else {total=total+1/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/rockies1.jpg">
+        <span>1</span>
+    </div>
+
+    <div class="crbutton" id="crn2" onclick="
+        if (decimal==false) {total=total*10+2;}
+        else {total=total+2/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/rockies2.jpg">
+        <span>2</span>
+    </div>
+
+    <div class="crbutton" id="crn3" onclick="
+        if (decimal==false) {total=total*10+3;}
+        else {total=total+3/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/rockies3.jpg">
+        <span>3</span>
+    </div>
+
+    <div class="crbutton" id="crnp" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='+';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'+';">
+        <IMG src="images/rockiesp.jpg">
+        <span>+</span>
+    </div>
+
+    <div class="crbutton" id="crnm" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='-';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'-';">
+        <IMG src="images/rockiesm.jpg">
+        <span>-</span>
+    </div>
+
+    <div class="crbutton" id="crn4" onclick="
+        if (decimal==false) {total=total*10+4;}
+        else {total=total+4/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/rockies4.jpg">
+        <span>4</span>
+    </div>
+
+    <div class="crbutton" id="crn5" onclick="
+        if (decimal==false) {total=total*10+5;}
+        else {total=total+5/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/rockies5.jpg">
+        <span>5</span>
+    </div>
+
+    <div class="crbutton" id="crn6" onclick="
+        if (decimal==false) {total=total*10+6;}
+        else {total=total+6/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/rockies6.jpg">
+        <span>6</span>
+    </div>
+
+    <div class="crbutton" id="crnt" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='*';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'*';">
+        <IMG src="images/rockiest.jpg">
+        <span>*</span>
+    </div>
+
+    <div class="crbutton" id="crnd" onclick="
+        if (operation == '+') {total=firstNum+total;}
+        else if (operation == '-') {total=firstNum-total;}
+        else if (operation == '*') {total=firstNum*total;}
+        else if (operation == '/') {total=firstNum/total;}
+
+        firstNum=total;
+        operation='/';
+        total=0;
+        decimal=false;
+        decimalPlace=1;
+
+        document.getElementById('aa').innerHTML=firstNum+'/';">
+        <IMG src="images/rockiesd.jpg">
+        <span>/</span>
+    </div>
+
+    <div class="crbutton" id="crn7" onclick="
+        if (decimal==false) {total=total*10+7;}
+        else {total=total+7/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/rockies7.jpg">
+        <span>7</span>
+    </div>
+
+    <div class="crbutton" id="crn8" onclick="
+        if (decimal==false) {total=total*10+8;}
+        else {total=total+8/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/rockies8.jpg">
+        <span>8</span>
+    </div>
+
+    <div class="crbutton" id="crn9" onclick="
+        if (decimal==false) {total=total*10+9;}
+        else {total=total+9/(10 ** decimalPlace); decimalPlace=decimalPlace+1;}
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/rockies9.jpg">
+        <span>9</span>
+    </div>
+
+    <div class="crbutton" id="crnp1" onclick="
+        total=total*total;
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/rockiesnp1.jpg">
+        <span>x²</span>
+    </div>
+
+    <div class="crbutton" id="crnp2" onclick="
+        total=Math.sqrt(total);
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/rockiesnp2.jpg">
+        <span>√</span>
+    </div>
+
+    <div class="crbutton" id="crce" onclick="
+        total=Math.floor(total/10);
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/rockiesce.jpg">
+        <span>CE</span>
+    </div>
+
+    <div class="crbutton" id="crc" onclick="
+        total=0;
+        firstNum=0;
+        operation='';
+        decimal=false;
+        decimalPlace=1;
+        document.getElementById('aa').innerHTML=total;">
+        <IMG src="images/rockiesc.jpg">
+        <span>C</span>
+    </div>
+
+</DIV>
+
+
+<script>
+function g6off(){
+        document.getElementById('crn0').style.left='-50%';
+         document.getElementById('crnd2').style.left='-50%';
+          document.getElementById('crnn').style.left='-50%';
+           document.getElementById('crne').style.left='-50%';
+            document.getElementById('crn1').style.left='150%';
+             document.getElementById('crn2').style.left='150%';
+              document.getElementById('crn3').style.left='150%';
+               document.getElementById('crnp').style.left='150%';
+                document.getElementById('crnm').style.left='150%';
+                 document.getElementById('crn4').style.left='-50%';
+                  document.getElementById('crn5').style.left='-50%';
+                   document.getElementById('crn6').style.left='-50%';
+                    document.getElementById('crnt').style.left='-50%';
+                     document.getElementById('crnd').style.left='-50%';
+                      document.getElementById('crn7').style.left='150%';
+                       document.getElementById('crn8').style.left='150%';
+                        document.getElementById('crn9').style.left='150%';
+                         document.getElementById('crnp1').style.left='150%';
+                          document.getElementById('crnp2').style.left='150%';
+                           document.getElementById('crce').style.left='-50%';
+                            document.getElementById('crc').style.left='-50%';
+            }
+ function g6on(){
+        document.getElementById('crn0').style.left='30%';
+         document.getElementById('crnd2').style.left='37%';
+          document.getElementById('crnn').style.left='44%';
+           document.getElementById('crne').style.left='51%';
+            document.getElementById('crn1').style.left='30%';
+             document.getElementById('crn2').style.left='37%';
+              document.getElementById('crn3').style.left='44%';
+               document.getElementById('crnp').style.left='51%';
+                document.getElementById('crnm').style.left='58%';
+                 document.getElementById('crn4').style.left='30%';
+                  document.getElementById('crn5').style.left='37%';
+                   document.getElementById('crn6').style.left='44%';
+                    document.getElementById('crnt').style.left='51%';
+                     document.getElementById('crnd').style.left='58%';
+                      document.getElementById('crn7').style.left='30%';
+                       document.getElementById('crn8').style.left='37%';
+                        document.getElementById('crn9').style.left='44%';
+                         document.getElementById('crnp1').style.left='51%';
+                          document.getElementById('crnp2').style.left='58%';
+                           document.getElementById('crce').style.left='51%';
+                            document.getElementById('crc').style.left='58%';
+                        }
+</script>
+
+<IMG id='NLwest' src="images/NLwest.png"></IMG>
+<SPAN id='nl'>National League</SPAN>
+<SPAN id='west'>WEST</SPAN>
+<DIV id='black'><DIV id='aa'>0</DIV></DIV>
+
+<IMG id='LAD' src="images/Dodgers.png" onclick="g1off();g2on();g3off();g4off();g5off();g6off();changeBG('images/dodgersbg.jpg');">
+
+ <IMG id='SD' src="images/Padres.png" onclick="g1off();g2off();g3on();g4off();g5off();g6off(); changeBG('images/padresbg.jpg');"></IMG>
+ <IMG id='ARI' src="images/Dbacks.png" onclick="g1off();g2off();g3off();g4on();g5off();g6off(); changeBG('images/dbacksbg.jpg');"></IMG>
+ <IMG id='SF' src="images/Giants.png" onclick="g1off();g2off();g3off();g4off();g5on();g6off(); changeBG('images/giantsbg.jpg');"></IMG>
+ <IMG id='CR' src="images/Rockies.png" onclick="g1off();g2off();g3off();g4off();g5off();g6on(); changeBG('images/rockiesbg.jpg');"></IMG>
+</body>
+</HTML>

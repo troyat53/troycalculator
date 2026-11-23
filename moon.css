@@ -1,0 +1,452 @@
+#moon { width: 80px; height: 80px; border-radius: 50%;box-shadow: 15px 15px 0 0 green; position: absolute; top:5%; left: 85%; transform: scale(1.5);}
+#rabbit{position: absolute; top: -50%; left: -25%; transform: scale(0.6);}
+#moon1 { width: 80px; height: 80px; border-radius: 50%;box-shadow: 15px 15px 0 0 green; position: absolute; top:25%; left: 70%; transform: scale(1);transform: rotate(90deg);}
+#moon2 { width: 80px; height: 80px; border-radius: 50%;box-shadow: 15px 15px 0 0 green; position: absolute; top:5%; left: 25%; transform: scale(0.5);}
+#moon3 { width: 80px; height: 80px; border-radius: 50%;box-shadow: 15px 15px 0 0 green; position: absolute; top:0%; left: 5%; transform: scale(1); transform: rotate(90deg);}
+
+#star-five {
+      margin: 50px 0;
+      position: absolute;
+      display: block;
+      color: green;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid green;
+      border-left: 100px solid transparent;
+      transform: rotate(35deg); transform: scale(0.3); top: 10%; left:50%;
+    }
+    #star-five:before {
+      border-bottom: 80px solid green;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -45px;
+      left: -65px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+    }
+    #star-five:after {
+      position: absolute;
+      display: block;
+      color: green;
+      top: 3px;
+      left: -105px;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid green;
+      border-left: 100px solid transparent;
+      transform: rotate(-70deg);
+      content: ''; 
+    }
+#star-five1 {
+      margin: 50px 0;
+      position: absolute;
+      display: block;
+      color: green;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid green;
+      border-left: 100px solid transparent;
+      transform: rotate(35deg); transform: scale(0.5); top: 0%; left:70%;
+    }
+    #star-five1:before {
+      border-bottom: 80px solid green;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -45px;
+      left: -65px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+    }
+    #star-five1:after {
+      position: absolute;
+      display: block;
+      color: green;
+      top: 3px;
+      left: -105px;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid green;
+      border-left: 100px solid transparent;
+      transform: rotate(-70deg);
+      content: '';
+    }
+#star-five2 {
+      margin: 50px 0;
+      position: absolute;
+      display: block;
+      color: green;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid green;
+      border-left: 100px solid transparent;
+      transform: rotate(35deg); transform: scale(0.2); top: 5%; left:30%;
+    }
+    #star-five2:before {
+      border-bottom: 80px solid green;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -45px;
+      left: -65px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+    }
+    #star-five2:after {
+      position: absolute;
+      display: block;
+      color: green;
+      top: 3px;
+      left: -105px;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid green;
+      border-left: 100px solid transparent;
+      transform: rotate(-70deg);
+      content: '';
+    }
+#star-five3 {
+      margin: 50px 0;
+      position: absolute;
+      display: block;
+      color: green;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid green;
+      border-left: 100px solid transparent;
+      transform: rotate(35deg); transform: scale(0.5); top: 30%; left:30%;
+    }
+    #star-five3:before {
+      border-bottom: 80px solid green;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -45px;
+      left: -65px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+    }
+    #star-five3:after {
+      position: absolute;
+      display: block;
+      color: green;
+      top: 3px;
+      left: -105px;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid green;
+      border-left: 100px solid transparent;
+      transform: rotate(-70deg);
+      content: '';
+    }
+#star-five4 {
+      margin: 50px 0;
+      position: absolute;
+      display: block;
+      color: green;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid green;
+      border-left: 100px solid transparent;
+      transform: rotate(35deg); transform: scale(0.4); top: 40%; left:80%;
+    }
+    #star-five4:before {
+      border-bottom: 80px solid green;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -45px;
+      left: -65px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+    }
+    #star-five4:after {
+      position: absolute;
+      display: block;
+      color: green;
+      top: 3px;
+      left: -105px;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid green;
+      border-left: 100px solid transparent;
+      transform: rotate(-70deg);
+      content: '';
+    }
+#star-five5 {
+      margin: 50px 0;
+      position: absolute;
+      display: block;
+      color: green;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid green;
+      border-left: 100px solid transparent;
+      transform: rotate(35deg); transform: scale(0.3); top: 25%; left:10%;
+    }
+    #star-five5:before {
+      border-bottom: 80px solid green;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -45px;
+      left: -65px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+    }
+    #star-five5:after {
+      position: absolute;
+      display: block;
+      color: green;
+      top: 3px;
+      left: -105px;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid green;
+      border-left: 100px solid transparent;
+      transform: rotate(-70deg);
+      content: '';
+    }
+#star-five6 {
+      margin: 50px 0;
+      position: absolute;
+      display: block;
+      color: green;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid green;
+      border-left: 100px solid transparent;
+      transform: rotate(35deg); transform: scale(0.4); top: 0%; left:10%;
+    }
+    #star-five6:before {
+      border-bottom: 80px solid green;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: -45px;
+      left: -65px;
+      display: block;
+      content: '';
+      transform: rotate(-35deg);
+    }
+    #star-five6:after {
+      position: absolute;
+      display: block;
+      color: green;
+      top: 3px;
+      left: -105px;
+      width: 0px;
+      height: 0px;
+      border-right: 100px solid transparent;
+      border-bottom: 70px solid green;
+      border-left: 100px solid transparent;
+      transform: rotate(-70deg);
+      content: '';
+    }
+
+#thunder {
+    height: 200px; 
+    aspect-ratio: 0.4;
+    clip-path: polygon(100% 0, 23% 46%, 46% 44%, 15% 69%, 38% 67%, 0 100%, 76% 57%, 53% 58%, 88% 33%, 60% 37%);
+    background: green; position: absolute; top: 20%; left: 25%}
+
+#thunder1 {
+    height: 200px; 
+    aspect-ratio: 0.2;
+    clip-path: polygon(100% 0, 23% 46%, 46% 44%, 15% 69%, 38% 67%, 0 100%, 76% 57%, 53% 58%, 88% 33%, 60% 37%);
+    background: green; position: absolute; top: 40%; left: 5%}
+
+#thunder2 {
+    height: 200px; 
+    aspect-ratio: 0.3;
+    clip-path: polygon(100% 0, 23% 46%, 46% 44%, 15% 69%, 38% 67%, 0 100%, 76% 57%, 53% 58%, 88% 33%, 60% 37%);
+    background: green; position: absolute; top: 40%; left: 75%}
+
+#thunder3 {
+    height: 200px; 
+    aspect-ratio: 0.2;
+    clip-path: polygon(100% 0, 23% 46%, 46% 44%, 15% 69%, 38% 67%, 0 100%, 76% 57%, 53% 58%, 88% 33%, 60% 37%);
+    background: green; position: absolute; top: 40%; left: 44%}
+#square {
+  width: 100px;
+  height: 100px;
+  background: green; position: absolute; top: 84%; left: 0%;}
+  #square1 {
+  width: 100px;
+  height: 100px;
+  background: green; position: absolute; top: 84%; left: 6%;}
+  #square2 {
+  width: 100px;
+  height: 100px;
+  background: green; position: absolute; top: 84%; left: 12%;}
+  #square3 {
+  width: 100px;
+  height: 100px;
+  background: green; position: absolute; top: 84%; left: 18%;}
+  #square4 {
+  width: 100px;
+  height: 100px;
+  background: green; position: absolute; top: 84%; left: 24%;}
+   #square5 {
+  width: 100px;
+  height: 100px;
+  background: green; position: absolute; top: 84%; left: 30%;}
+  #square6 {
+  width: 100px;
+  height: 100px;
+  background: green; position: absolute; top: 84%; left: 36%;}
+  #square7 {
+  width: 100px;
+  height: 100px;
+  background: green; position: absolute; top: 84%; left: 42%;}
+  #square8 {
+  width: 100px;
+  height: 100px;
+  background: green; position: absolute; top: 84%; left: 48%;}
+  #square9 {
+  width: 100px;
+  height: 100px;
+  background: green; position: absolute; top: 84%; left: 54%;}
+
+   #square11 {
+  width: 100px;
+  height: 100px;
+  background: green; position: absolute; top: 84%; left: 66%;}
+   #square12 {
+  width: 100px;
+  height: 100px;
+  background: green; position: absolute; top: 84%; left: 72%;}
+   #square13 {
+  width: 100px;
+  height: 100px;
+  background: green; position: absolute; top: 84%; left: 78%;}
+   #square14 {
+  width: 100px;
+  height: 100px;
+  background: green; position: absolute; top: 84%; left: 84%;}
+  #square15 {
+  width: 100px;
+  height: 100px;
+  background: green; position: absolute; top: 84%; left: 90%;}
+  #square16 {
+  width: 100px;
+  height: 100px;
+  background: green; position: absolute; top: 84%; left: 96%;}
+    #square17 {
+  width: 25px;
+  height: 25px;
+  background: black; position: absolute; top: 86%; left: 10%;}
+   #square18 {
+  width: 25px;
+  height: 25px;
+  background: black; position: absolute; top: 94%; left: 10%;}
+   #square19 {
+  width: 25px;
+  height: 25px;
+  background: black; position: absolute; top: 86%; left: 5%;}
+   #square20 {
+  width: 25px;
+  height: 25px;
+  background: black; position: absolute; top: 94%; left: 5%;}
+     #square21 {
+  width: 25px;
+  height: 25px;
+  background: black; position: absolute; top: 86%; left: 0%;}
+     #square22 {
+  width: 25px;
+  height: 25px;
+  background: black; position: absolute; top: 94%; left: 0%;}
+  #rectangle {
+  width: 25px;
+  height: 75px;
+  background: black; position: absolute; top: 86%; left: 20%}
+    #rectangle1 {
+  width: 25px;
+  height: 75px;
+  background: black; position: absolute; top: 86%; left: 40%}
+    #rectangle2 {
+  width: 25px;
+  height: 75px;
+  background: black;position: absolute; top: 86%; left: 30%}
+  #rectangle3 {
+  width: 25px;
+  height: 75px;
+  background: black; position: absolute; top: 86%; left: 68%}
+    #rectangle4 {
+  width: 25px;
+  height: 75px;
+  background: black;position: absolute; top: 86%; left: 100%}
+  #square24 {
+  width: 25px;
+  height: 25px;
+  background: black; position: absolute; top: 94%; left: 75%;}
+  #square25 {
+  width: 25px;
+  height: 25px;
+  background: black; position: absolute; top: 86%; left: 75%;}
+  #square26 {
+  width: 25px;
+  height: 25px;
+  background: black; position: absolute; top: 94%; left: 80%;}
+  #square27 {
+  width: 25px;
+  height: 25px;
+  background: black; position: absolute; top: 86%; left: 80%;}
+  #square28 {
+  width: 25px;
+  height: 25px;
+  background: black; position: absolute; top: 94%; left: 85%;}
+  #square29 {
+  width: 25px;
+  height: 25px;
+  background: black; position: absolute; top: 86%; left: 85%;}
+  #square30 {
+  width: 25px;
+  height: 25px;
+  background: black; position: absolute; top: 94%; left: 90%;}
+  #square31 {
+  width: 25px;
+  height: 25px;
+  background: black; position: absolute; top: 86%; left: 90%;}
+   #square32 {
+  width: 25px;
+  height: 25px;
+  background: black; position: absolute; top: 94%; left: 95%;}
+  #square33 {
+  width: 25px;
+  height: 25px;
+  background: black; position: absolute; top: 86%; left: 95%;}

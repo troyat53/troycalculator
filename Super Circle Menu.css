@@ -1,0 +1,219 @@
+#band{width: 100%; height: 110%; position: fixed; opacity: 0.6; object-fit: cover; top:0%; left:0%; z-index: -1;}
+@font-face {font-family: "Warband Stencil"; src: url("Warband Stencil.otf");}
+#a{position: fixed;font-family: "Warband Stencil"; font-size: 60px; color: black; left:1%; top:0%}
+#e1 {position: fixed;width: 40px;height: 40px;background: black; border-radius: 50%; top: 12%; left: 1%;}
+#e2 {position: fixed;width: 40px;height: 40px;background: black; border-radius: 50%; top: 20%; left: 1%;}
+#e3 {position: fixed;width: 40px;height: 40px;background: black; border-radius: 50%; top: 28%; left: 1%;}
+#e4 {position: fixed;width: 40px;height: 40px;background: black; border-radius: 50%; top: 36%; left: 1%;}
+#e5 {position: fixed;width: 40px;height: 40px;background: black; border-radius: 50%; top: 44%; left: 1%;}
+#e6 {position: fixed;width: 40px;height: 40px;background: black; border-radius: 50%; top: 52%; left: 1%;}
+#e7 {position: fixed;width: 40px;height: 40px;background: black; border-radius: 50%; top: 60%; left: 1%;}
+#e8 {position: fixed;width: 40px;height: 40px;background: black; border-radius: 50%; top: 68%; left: 1%;}
+#e9 {position: fixed;width: 40px;height: 40px;background: black; border-radius: 50%; top: 76%; left: 1%;}
+#e10 {position: fixed;width: 40px;height: 40px;background: black; border-radius: 50%; top: 84%; left: 1%;}
+#ep1 {position: fixed;font-family: "Warband Stencil"; font-size: 25px; color: white; left:2%; top:13%}
+#ep2 {position: fixed;font-family: "Warband Stencil"; font-size: 25px; color: white; left:2%; top:21%}
+#ep3 {position: fixed;font-family: "Warband Stencil"; font-size: 25px; color: white; left:2%; top:29%}
+#ep4 {position: fixed;font-family: "Warband Stencil"; font-size: 25px; color: white; left:2%; top:37%}
+#ep5 {position: fixed;font-family: "Warband Stencil"; font-size: 25px; color: white; left:2%; top:45%}
+#ep6 {position: fixed;font-family: "Warband Stencil"; font-size: 25px; color: white; left:2%; top:53%}
+#ep7 {position: fixed;font-family: "Warband Stencil"; font-size: 25px; color: white; left:2%; top:61%}
+#ep8 {position: fixed;font-family: "Warband Stencil"; font-size: 25px; color: white; left:2%; top:69%}
+#ep9 {position: fixed;font-family: "Warband Stencil"; font-size: 25px; color: white; left:2%; top:77%}
+#ep10 {position: fixed;font-family: "Warband Stencil"; font-size: 25px; color: white; left:1.5%; top:85%}
+
+#e1center {position: fixed; width: 370px; top: 18%; left: 30%;transition: all 1s ease;
+}
+#e1rb {position: fixed; width: 250px; top: 77%; left: 56%;transition: all 1s ease;
+}
+#e1lb {position: fixed; width: 250px; top: 77%; left: 30%;transition: all 1s ease;
+}
+#e1rw {position: fixed; width: 200px; top: 53%; left: 60%;transition: all 1s ease;
+}
+#e1rl {position: fixed; width: 200px; top: 1.5%; left: 60%;transition: all 1s ease;
+}
+#e1tl {position: fixed; width: 100px; top: 1.5%; left: 30%;transition: all 1s ease;
+}
+#e1topl {position: fixed; width: 100px; top: 1.5%; left: 40.5%;transition: all 1s ease;
+}
+#e1topr {position: fixed; width: 100px; top: 1.5%; left: 51%;transition: all 1s ease;
+}
+#e1t{position: fixed;font-family: "Warband Stencil"; font-size: 70px; color: black; left:80%; top:5%;transition: all 1s ease;}
+
+
+
+#e2center {position: fixed; width: 370px; top: 18%; left: 150%;transition: all 1s ease;
+}
+#e2rb {position: fixed; width: 250px; top: -50%; left: 56%;transition: all 1s ease;
+}
+#e2lb {position: fixed; width: 250px; top: -50%; left: 30%;transition: all 1s ease;
+}
+#e2rw {position: fixed; width: 200px; top: 53%; left: -50%;transition: all 1s ease;
+}
+#e2rl {position: fixed; width: 200px; top: 1.5%; left: -50%;transition: all 1s ease;
+}
+#e2tl {position: fixed; width: 100px; top: 150%; left: 30%;transition: all 1s ease;
+}
+#e2topl {position: fixed; width: 100px; top: 150%; left: 40.5%;transition: all 1s ease;
+}
+#e2topr {position: fixed; width: 100px; top: 150%; left: 51%;transition: all 1s ease;
+}
+#e2t{position: fixed;font-family: "Warband Stencil"; font-size: 70px; color: black; left:150%; top:5%;transition: all 1s ease;}
+
+
+#e3center {position: fixed; width: 370px; top: 18%; left: 150%;transition: all 1s ease;
+}
+#e3rb {position: fixed; width: 250px; top: -50%; left: 56%;transition: all 1s ease;
+}
+#e3lb {position: fixed; width: 250px; top: -50%; left: 30%;transition: all 1s ease;
+}
+#e3rw {position: fixed; width: 200px; top: 53%; left: -50%;transition: all 1s ease;
+}
+#e3rl {position: fixed; width: 200px; top: 1.5%; left: -50%;transition: all 1s ease;
+}
+#e3tl {position: fixed; width: 100px; top: 150%; left: 30%;transition: all 1s ease;
+}
+#e3topl {position: fixed; width: 100px; top: 150%; left: 40.5%;transition: all 1s ease;
+}
+#e3topr {position: fixed; width: 100px; top: 150%; left: 51%;transition: all 1s ease;
+}
+#e3t{position: fixed;font-family: "Warband Stencil"; font-size: 70px; color: black; left:150%; top:5%;transition: all 1s ease;}
+
+
+#e4center {position: fixed; width: 370px; top: 18%; left: 150%;transition: all 1s ease;
+}
+#e4rb {position: fixed; width: 250px; top: -50%; left: 56%;transition: all 1s ease;
+}
+#e4lb {position: fixed; width: 250px; top: -50%; left: 30%;transition: all 1s ease;
+}
+#e4rw {position: fixed; width: 200px; top: 53%; left: -50%;transition: all 1s ease;
+}
+#e4rl {position: fixed; width: 200px; top: 1.5%; left: -50%;transition: all 1s ease;
+}
+#e4tl {position: fixed; width: 100px; top: 150%; left: 30%;transition: all 1s ease;
+}
+#e4topl {position: fixed; width: 100px; top: 150%; left: 40.5%;transition: all 1s ease;
+}
+#e4topr {position: fixed; width: 100px; top: 150%; left: 51%;transition: all 1s ease;
+}
+#e4t{position: fixed;font-family: "Warband Stencil"; font-size: 70px; color: black; left:150%; top:5%;transition: all 1s ease;}
+
+
+
+#e5center {position: fixed; width: 370px; top: 18%; left: 150%;transition: all 1s ease;
+}
+#e5rb {position: fixed; width: 250px; top: -50%; left: 56%;transition: all 1s ease;
+}
+#e5lb {position: fixed; width: 250px; top: -50%; left: 30%;transition: all 1s ease;
+}
+#e5rw {position: fixed; width: 200px; top: 53%; left: -50%;transition: all 1s ease;
+}
+#e5rl {position: fixed; width: 200px; top: 1.5%; left: -50%;transition: all 1s ease;
+}
+#e5tl {position: fixed; width: 100px; top: 150%; left: 30%;transition: all 1s ease;
+}
+#e5topl {position: fixed; width: 100px; top: 150%; left: 40.5%;transition: all 1s ease;
+}
+#e5topr {position: fixed; width: 100px; top: 150%; left: 51%;transition: all 1s ease;
+}
+#e5t{position: fixed;font-family: "Warband Stencil"; font-size: 70px; color: black; left:150%; top:5%;transition: all 1s ease;}
+
+
+
+#e6center {position: fixed; width: 370px; top: 18%; left: 150%;transition: all 1s ease;
+}
+#e6rb {position: fixed; width: 250px; top: -50%; left: 56%;transition: all 1s ease;
+}
+#e6lb {position: fixed; width: 250px; top: -50%; left: 30%;transition: all 1s ease;
+}
+#e6rw {position: fixed; width: 200px; top: 53%; left: -50%;transition: all 1s ease;
+}
+#e6rl {position: fixed; width: 200px; top: 1.5%; left: -50%;transition: all 1s ease;
+}
+#e6tl {position: fixed; width: 100px; top: 150%; left: 30%;transition: all 1s ease;
+}
+#e6topl {position: fixed; width: 100px; top: 150%; left: 40.5%;transition: all 1s ease;
+}
+#e6topr {position: fixed; width: 100px; top: 150%; left: 51%;transition: all 1s ease;
+}
+#e6t{position: fixed;font-family: "Warband Stencil"; font-size: 70px; color: black; left:150%; top:5%;transition: all 1s ease;}
+
+
+
+#e7center {position: fixed; width: 370px; top: 18%; left: 150%;transition: all 1s ease;
+}
+#e7rb {position: fixed; width: 250px; top: -50%; left: 56%;transition: all 1s ease;
+}
+#e7lb {position: fixed; width: 250px; top: -50%; left: 30%;transition: all 1s ease;
+}
+#e7rw {position: fixed; width: 200px; top: 53%; left: -50%;transition: all 1s ease;
+}
+#e7rl {position: fixed; width: 200px; top: 1.5%; left: -50%;transition: all 1s ease;
+}
+#e7tl {position: fixed; width: 100px; top: 150%; left: 30%;transition: all 1s ease;
+}
+#e7topl {position: fixed; width: 100px; top: 150%; left: 40.5%;transition: all 1s ease;
+}
+#e7topr {position: fixed; width: 100px; top: 150%; left: 51%;transition: all 1s ease;
+}
+#e7t{position: fixed;font-family: "Warband Stencil"; font-size: 70px; color: black; left:150%; top:5%;transition: all 1s ease;}
+
+
+#e8center {position: fixed; width: 370px; top: 18%; left: 150%;transition: all 1s ease;
+}
+#e8rb {position: fixed; width: 250px; top: -50%; left: 56%;transition: all 1s ease;
+}
+#e8lb {position: fixed; width: 250px; top: -50%; left: 30%;transition: all 1s ease;
+}
+#e8rw {position: fixed; width: 200px; top: 53%; left: -50%;transition: all 1s ease;
+}
+#e8rl {position: fixed; width: 200px; top: 1.5%; left: -50%;transition: all 1s ease;
+}
+#e8tl {position: fixed; width: 100px; top: 150%; left: 30%;transition: all 1s ease;
+}
+#e8topl {position: fixed; width: 100px; top: 150%; left: 40.5%;transition: all 1s ease;
+}
+#e8topr {position: fixed; width: 100px; top: 150%; left: 51%;transition: all 1s ease;
+}
+#e8t{position: fixed;font-family: "Warband Stencil"; font-size: 70px; color: black; left:150%; top:5%;transition: all 1s ease;}
+
+
+
+
+#e9center {position: fixed; width: 370px; top: 18%; left: 150%;transition: all 1s ease;
+}
+#e9rb {position: fixed; width: 250px; top: -50%; left: 56%;transition: all 1s ease;
+}
+#e9lb {position: fixed; width: 250px; top: -50%; left: 30%;transition: all 1s ease;
+}
+#e9rw {position: fixed; width: 200px; top: 53%; left: -50%;transition: all 1s ease;
+}
+#e9rl {position: fixed; width: 200px; top: 1.5%; left: -50%;transition: all 1s ease;
+}
+#e9tl {position: fixed; width: 100px; top: 150%; left: 30%;transition: all 1s ease;
+}
+#e9topl {position: fixed; width: 100px; top: 150%; left: 40.5%;transition: all 1s ease;
+}
+#e9topr {position: fixed; width: 100px; top: 150%; left: 51%;transition: all 1s ease;
+}
+#e9t{position: fixed;font-family: "Warband Stencil"; font-size: 70px; color: black; left:150%; top:5%;transition: all 1s ease;}
+
+
+
+#e10center {position: fixed; width: 370px; top: 18%; left: 150%;transition: all 1s ease;
+}
+#e10rb {position: fixed; width: 250px; top: -50%; left: 56%;transition: all 1s ease;
+}
+#e10lb {position: fixed; width: 250px; top: -50%; left: 30%;transition: all 1s ease;
+}
+#e10rw {position: fixed; width: 200px; top: 53%; left: -50%;transition: all 1s ease;
+}
+#e10rl {position: fixed; width: 200px; top: 1.5%; left: -50%;transition: all 1s ease;
+}
+#e10tl {position: fixed; width: 100px; top: 150%; left: 30%;transition: all 1s ease;
+}
+#e10topl {position: fixed; width: 100px; top: 150%; left: 40.5%;transition: all 1s ease;
+}
+#e10topr {position: fixed; width: 100px; top: 150%; left: 51%;transition: all 1s ease;
+}
+#e10t{position: fixed;font-family: "Warband Stencil"; font-size: 70px; color: black; left:150%; top:5%;transition: all 1s ease;}

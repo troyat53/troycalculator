@@ -1,0 +1,22 @@
+@font-face {
+  font-family: creepy;
+  src: url(Heartless.ttf);
+}
+
+p { font-size: 80px;} #quote{ font-family: creepy; color:red;}
+#colorchange{width: 30%; height: 30%; background-color: red; position: fixed; z-index: 6;left: 65%; top: 67%; border-radius: 20%;  border: 5px black dashed}
+#black{width: 5%; height: 10%; background-color: black; position: fixed; z-index: 7; left: 66%; top: 77%;}
+#white{width: 5%; height: 10%; background-color: white; position: fixed; z-index: 7; left: 74%; top: 77%}
+#gray{width: 5%; height: 10%; background-color: gray; position: fixed; z-index: 7; left: 82%; top: 77%}
+#navyblue{width: 5%; height: 10%; background-color: #000080; position: fixed; z-index: 7; left: 90%; top: 77%}
+#heartless{ position: fixed; font-family: creepy; font-size: 30px; color: red; left:0%; top:70%}
+#blackadderITC{ position: fixed; font-family: blackadder ITC; font-size: 30px; color: red; left:0%; top:80%}
+#curlzmt{ position: fixed; font-family: curlz mt; font-size: 30px; color: red; left:20%; top:70%}
+#colonnamt{ position: fixed; font-family: colonna mt; font-size: 30px; color: red; left:20%; top:80%}
+#fontchange{width: 30%; height: 30%; background-color: gray; position: fixed; z-index: 6;left: 65%; top: 34%; border-radius: 20%;  border: 5px black dashed}
+#redfont{width: 5%; height: 10%; background-color: red; position: fixed; z-index: 7; left: 66%; top: 44%;}
+#blackfont{width: 5%; height: 10%; background-color: black; position: fixed; z-index: 7; left: 74%; top: 44%}
+#whitefont{width: 5%; height: 10%; background-color: white; position: fixed; z-index: 7; left: 82%; top: 44%}
+#bluefont{width: 5%; height: 10%; background-color: blue; position: fixed; z-index: 7; left: 90%; top: 44%}
+#fonttext{ position: fixed; font-family: arial; font-size: 40px; color: black; left: 68%; top:50%; z-index: 7;}
+#colortext{ position: fixed; font-family: arial; font-size: 40px; color: black; left: 69%; top:83%; z-index: 7;}

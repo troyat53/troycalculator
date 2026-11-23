@@ -1,0 +1,25 @@
+    #a{ position: fixed;font-family:Berlin Sans FB; font-size: 80px; color: blue; left:40%; top:60%}
+	#b{ position: fixed;font-family:Bernard MT; font-size: 30px; color: black; left:40%; top:58%}
+	#d{ position: fixed;font-family:Berlin Sans FB; font-size: 50px; color: red; left:32%; top:35%; transform: rotate(-75deg)}
+	#e{ position: fixed;font-family:informal roman; font-size: 55px; color: blue; left:15%; top:25%; transform: rotate(-90deg)}
+    #f{ position: fixed;font-family:Berlin Sans FB; font-size: 20px; color: blue; left:42%; top:37%; transform: rotate(105deg)}
+    #g{ position: fixed;font-family:Berlin Sans FB; font-size: 35px; color: red; left:67%; top:59%; transform: rotate(180deg)}
+    #h{ position: fixed;font-family:Berlin Sans FB; font-size: 50px; color: blue; left:50%; top:50%; transform: rotate(75deg)}
+    #i{ position: fixed;font-family:Berlin Sans FB; font-size: 30px; color: red; left:58%; top:84%; transform: rotate(75deg)}
+    #j{ position: fixed;font-family:Berlin Sans FB; font-size: 30px; color: blue; left:46%; top:20%; transform: rotate(180deg)}
+    #k{ position: fixed;font-family:Bernard MT; font-size: 20px; color: red; left:41%; top:35%; transform: rotate(-75deg)}
+    #l{ position: fixed;font-family:Bernard MT; font-size: 25px; color: black; left:52%; top:44%; transform: rotate(-105deg)}
+    #m{ position: fixed;font-family:Bernard MT; font-size: 50px; color: red; left:66%; top:64%}
+    #p{ position: fixed;font-family:Bernard MT; font-size: 15px; color: black; left:39%; top:50%; transform: rotate(-75deg)}
+    #q{ position: fixed;font-family:Bernard MT; font-size: 35px; color: black; left:30%; top:83%; transform: rotate(-75deg)}
+    #r{ position: fixed;font-family:Bernard MT; font-size: 20px; color: red; left:29%; top:84%; transform: rotate(105deg)}
+    #s{ position: fixed;font-family:Bernard MT; font-size: 25px; color: black; left:58%; top:85%; transform: rotate(-105deg)}
+    #t{ position: fixed;font-family:Bernard MT; font-size: 20px; color: black; left:50%; top:59%}
+    #u{ position: fixed;font-family:Bernard MT; font-size: 40px; color: black; left:46%; top:24%; transform: rotate(180deg)}
+    #w{ position: fixed;font-family:Bernard MT; font-size: 35px; color: blue; left:26%; top:66%; transform: rotate(180deg)}  
+    #y{ position: fixed;font-family:Bernard MT; font-size: 25px; color: blue; left:63%; top:88%; transform: rotate(-105deg)}
+    #z{ position: fixed;font-family:Bernard MT; font-size: 45px; color: red; left:26%; top:57%}
+
+    #ab{ position: fixed; width:102%; height:102%; z-index:-1; left:-1%; top:-1%;}
+    #bc{ positoin: absolute; left:20% ;top: 30%; z-index: 2; width: 25%; border: 5px black solid; border-radius: 10%;}
+

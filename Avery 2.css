@@ -1,0 +1,79 @@
+#a { position: fixed; width: 19%; height: 0.769%; background-color: red; top: 49.231%; left: 0%; }
+#b { position: fixed; width: 19%; height: 0.769%; background-color: white; top: 48.462%; left: 0%; }
+#c { position: fixed; width: 19%; height: 0.769%; background-color: red; top: 47.693%; left: 0%; }
+#d { position: fixed; width: 19%; height: 0.769%; background-color: white; top: 46.924%; left: 0%; }
+#e { position: fixed; width: 19%; height: 0.769%; background-color: red; top: 46.155%; left: 0%; }
+#f { position: fixed; width: 19%; height: 0.769%; background-color: white; top: 45.386%; left: 0%; }
+#g { position: fixed; width: 11.4%; height: 0.769%; background-color: red; top: 44.617%; left: 7.6%; }
+#h { position: fixed; width: 11.4%; height: 0.769%; background-color: white; top: 43.848%; left: 7.6%; }
+#i { position: fixed; width: 11.4%; height: 0.769%; background-color: red; top: 43.079%; left: 7.6%; }
+#j { position: fixed; width: 11.4%; height: 0.769%; background-color: white; top: 42.310%; left: 7.6%; }
+#k { position: fixed; width: 11.4%; height: 0.769%; background-color: red; top: 41.541%; left: 7.6%; }
+#l { position: fixed; width: 11.4%; height: 0.769%; background-color: white; top: 40.772%; left: 7.6%; }
+#m { position: fixed; width: 11.4%; height: 0.769%; background-color: red; top: 40.003%; left: 7.6%; }
+#n { position: fixed; width: 7.6%; height: 5.383%; background-color: blue; top: 40.003%; left: 0%; }
+#o, #p, #q, #r, #s, #t, #u, #v, #w, #x, #y, #z,
+#aa, #ab, #ac, #ad, #ae, #af, #ag, #ah, #ai, #aj, #ak, #al,
+#am, #an, #ao, #ap, #aq, #ar, #as, #at, #au, #av, #aw, #ax,
+#ay, #az, #ba, #bb, #bc, #bd, #be, #bf, #bg, #bh, #bi, #bj, #bk, #bl {
+  position: fixed;
+  width: 0.38%;  
+  aspect-ratio: 1;      
+  background-color: white;
+  clip-path: polygon(
+    50% 0%, 61.8% 35.3%, 97.6% 35.3%, 68.5% 56.5%, 
+    79.4% 90.5%, 50% 69.1%, 20.6% 90.5%, 31.5% 56.5%, 
+    2.4% 35.3%, 38.2% 35.3%
+  );
+}
+
+#o  { top: 40.25%; left: 0.5%; }
+#p  { top: 40.25%; left: 1.7%; }
+#q  { top: 40.25%; left: 2.9%; }
+#r  { top: 40.25%; left: 4.1%; }
+#s  { top: 40.25%; left: 5.3%; }
+#t  { top: 40.25%; left: 6.5%; }
+#u  { top: 40.75%; left: 1.1%; }
+#v  { top: 40.75%; left: 2.3%; }
+#w  { top: 40.75%; left: 3.5%; }
+#x  { top: 40.75%; left: 4.7%; }
+#y  { top: 40.75%; left: 5.9%; }
+#z  { top: 41.25%; left: 0.5%; }
+#aa { top: 41.25%; left: 1.7%; }
+#ab { top: 41.25%; left: 2.9%; }
+#ac { top: 41.25%; left: 4.1%; }
+#ad { top: 41.25%; left: 5.3%; }
+#ae { top: 41.25%; left: 6.5%; }
+#af { top: 41.75%; left: 1.1%; }
+#ag { top: 41.75%; left: 2.3%; }
+#ah { top: 41.75%; left: 3.5%; }
+#ai { top: 41.75%; left: 4.7%; }
+#aj { top: 41.75%; left: 5.9%; }
+#ak { top: 42.25%; left: 0.5%; }
+#al { top: 42.25%; left: 1.7%; }
+#am { top: 42.25%; left: 2.9%; }
+#an { top: 42.25%; left: 4.1%; }
+#ao { top: 42.25%; left: 5.3%; }
+#ap { top: 42.25%; left: 6.5%; }
+#aq { top: 42.75%; left: 1.1%; }
+#ar { top: 42.75%; left: 2.3%; }
+#as { top: 42.75%; left: 3.5%; }
+#at { top: 42.75%; left: 4.7%; }
+#au { top: 42.75%; left: 5.9%; }
+#av { top: 43.25%; left: 0.5%; }
+#aw { top: 43.25%; left: 1.7%; }
+#ax { top: 43.25%; left: 2.9%; }
+#ay { top: 43.25%; left: 4.1%; }
+#az { top: 43.25%; left: 5.3%; }
+#ba { top: 43.25%; left: 6.5%; }
+#bb { top: 43.75%; left: 1.1%; }
+#bc { top: 43.75%; left: 2.3%; }
+#bd { top: 43.75%; left: 3.5%; }
+#be { top: 43.75%; left: 4.7%; }
+#bf { top: 43.75%; left: 5.9%; }
+#bg { top: 44.25%; left: 0.5%; }
+#bh { top: 44.25%; left: 1.7%; }
+#bi { top: 44.25%; left: 2.9%; }
+#bj { top: 44.25%; left: 4.1%; }
+#bk { top: 44.25%; left: 5.3%; }
+#bl { top: 44.25%; left: 6.5%; }

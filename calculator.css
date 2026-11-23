@@ -1,0 +1,1127 @@
+@font-face {
+    font-family: "digital-7";
+    src: url("digital-7.ttf");
+}
+
+#normal {
+    pointer-events: none;
+}
+
+#normal #normalt {
+    pointer-events: auto;
+}
+
+body {
+    position: relative;
+    isolation: isolate;
+}
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+    z-index: -2;
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+}
+
+.button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background: black;
+    border-radius: 20%;
+    opacity: 0.8;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 0.05s ease;
+    z-index: 2;
+    pointer-events: auto;
+}
+
+.button:hover {
+    opacity: 1;
+}
+
+.button span {
+    font-family: "digital-7";
+    font-size: 60px;
+    color: red;
+    opacity: 1;
+    pointer-events: none;
+}
+
+
+#n0 {
+    top: 90%;
+    left: 30%; transition: all 2s ease;
+}
+
+#nd2 {
+    top: 90%;
+    left: 37%; transition: all 2s ease;
+}
+
+#nn {
+    top: 90%;
+    left: 44%; transition: all 2s ease;
+}
+
+#ne {
+    width: 150px;
+    border-radius: 10%;
+    top: 90%;
+    left: 51%; transition: all 2s ease;
+}
+
+
+#nn span {
+    font-size: 50px; transition: all 2s ease;
+}
+
+#ne span {
+    font-size: 80px; transition: all 2s ease;
+}
+
+
+
+#n1 {
+    top: 75%;
+    left: 30%; transition: all 2s ease;
+}
+
+#n2 {
+    top: 75%;
+    left: 37%; transition: all 2s ease;
+}
+
+#n3 {
+    top: 75%;
+    left: 44%; transition: all 2s ease;
+}
+
+#np {
+    top: 75%;
+    left: 51%; transition: all 2s ease;
+}
+
+#nm {
+    top: 75%;
+    left: 58%; transition: all 2s ease;
+}
+
+
+
+#np span,
+#nm span {
+    font-size: 100px; transition: all 2s ease;
+}
+
+
+
+#n4 {
+    top: 60%;
+    left: 30%; transition: all 2s ease;
+}
+
+#n5 {
+    top: 60%;
+    left: 37%; transition: all 2s ease;
+}
+
+#n6 {
+    top: 60%;
+    left: 44%; transition: all 2s ease;
+}
+
+#nt {
+    top: 60%;
+    left: 51%; transition: all 2s ease;
+}
+
+#nd {
+    top: 60%;
+    left: 58%; transition: all 2s ease;
+}
+
+
+
+#nt span {
+    font-size: 80px; transition: all 2s ease;
+}
+
+
+#n7 {
+    top: 45%;
+    left: 30%; transition: all 2s ease;
+}
+
+#n8 {
+    top: 45%;
+    left: 37%; transition: all 2s ease;
+}
+
+#n9 {
+    top: 45%;
+    left: 44%; transition: all 2s ease;
+}
+
+#np1 {
+    top: 45%;
+    left: 51%; transition: all 2s ease;
+}
+
+#np2 {
+    top: 45%;
+    left: 58%; transition: all 2s ease;
+}
+#np2 span {
+    font-size: 45px;
+}
+
+
+
+
+#ce {
+    top: 30%;
+    left: 51%; transition: all 2s ease;
+}
+
+#c {
+    top: 30%;
+    left: 58%; transition: all 2s ease;
+}
+
+
+
+
+.labutton {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    opacity: 0.6;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 0.05s ease;
+    z-index: 2;
+}
+
+.labutton img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    z-index: 0;
+}
+
+.labutton:hover {
+    opacity: 1;
+}
+
+.labutton span {
+    font-family: "digital-7";
+    font-size: 60px;
+    color: blue;
+    opacity: 1;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#lan0 {
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+#land2 {
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+#lann {
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+#lane {
+    width: 150px;
+    border-radius: 10%;
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+
+#lann span {
+    font-size: 50px; transition: all 2s ease;
+}
+
+#lane span {
+    font-size: 80px; transition: all 2s ease;
+}
+
+
+
+#lan1 {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#lan2 {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#lan3 {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#lanp {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#lanm {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+
+
+#lanp span,
+#lanm span {
+    font-size: 100px; transition: all 2s ease;
+}
+
+
+
+#lan4 {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#lan5 {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#lan6 {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#lant {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#land {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+
+
+#lant span {
+    font-size: 80px; transition: all 2s ease;
+}
+
+
+#lan7 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+#lan8 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+#lan9 {
+    top: 45%;
+    transition: all 2s ease;  left: 150%;
+}
+
+#lanp1 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+#lanp2 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+
+
+
+#lace {
+    top: 30%;
+    transition: all 2s ease;left: -50%;
+}
+
+#lac {
+    top: 30%;
+    transition: all 2s ease;left: -50%;
+}
+
+
+
+.sdbutton {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    opacity: 0.6;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 0.05s ease;
+    z-index: 2;
+}
+
+.sdbutton img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    z-index: 0;
+}
+
+.sdbutton:hover {
+    opacity: 1;
+}
+
+.sdbutton span {
+    font-family: "digital-7";
+    font-size: 60px;
+    color: #ffcc26;
+    opacity: 1;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#sdn0 {
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+#sdnd2 {
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+#sdnn {
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+#sdne {
+    width: 150px;
+    border-radius: 10%;
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+
+#sdnn span {
+    font-size: 50px; transition: all 2s ease;
+}
+
+#sdne span {
+    font-size: 80px; transition: all 2s ease;
+}
+
+
+
+#sdn1 {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#sdn2 {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#sdn3 {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#sdnp {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#sdnm {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+
+
+#sdnp span,
+#sdnm span {
+    font-size: 100px; transition: all 2s ease;
+}
+
+
+
+#sdn4 {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#sdn5 {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#sdn6 {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#sdnt {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#sdnd {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+
+
+#sdnt span {
+    font-size: 80px; transition: all 2s ease;
+}
+
+
+#sdn7 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+#sdn8 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+#sdn9 {
+    top: 45%;
+    transition: all 2s ease;  left: 150%;
+}
+
+#sdnp1 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+#sdnp2 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+
+
+
+#sdce {
+    top: 30%;
+    transition: all 2s ease;left: -50%;
+}
+
+#sdc {
+    top: 30%;
+    transition: all 2s ease;left: -50%;
+}
+
+
+
+
+
+.azbutton {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    opacity: 0.6;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 0.05s ease;
+    z-index: 2;
+}
+
+.azbutton img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    z-index: 0;
+}
+
+.azbutton:hover {
+    opacity: 1;
+}
+
+.azbutton span {
+    font-family: "digital-7";
+    font-size: 60px;
+    color: red;
+    opacity: 1;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#azn0 {
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+#aznd2 {
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+#aznn {
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+#azne {
+    width: 150px;
+    border-radius: 10%;
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+
+#aznn span {
+    font-size: 50px; transition: all 2s ease;
+}
+
+#azne span {
+    font-size: 80px; transition: all 2s ease;
+}
+
+
+
+#azn1 {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#azn2 {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#azn3 {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#aznp {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#aznm {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+
+
+#aznp span,
+#aznm span {
+    font-size: 100px; transition: all 2s ease;
+}
+
+
+
+#azn4 {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#azn5 {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#azn6 {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#aznt {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#aznd {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+
+
+#aznt span {
+    font-size: 80px; transition: all 2s ease;
+}
+
+
+#azn7 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+#azn8 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+#azn9 {
+    top: 45%;
+    transition: all 2s ease;  left: 150%;
+}
+
+#aznp1 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+#aznp2 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+
+
+
+#azce {
+    top: 30%;
+    transition: all 2s ease;left: -50%;
+}
+
+#azc {
+    top: 30%;
+    transition: all 2s ease;left: -50%;
+}
+
+
+
+
+.sfbutton {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    opacity: 0.6;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 0.05s ease;
+    z-index: 2;
+}
+
+.sfbutton img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    z-index: 0;
+}
+
+.sfbutton:hover {
+    opacity: 1;
+}
+
+.sfbutton span {
+    font-family: "digital-7";
+    font-size: 60px;
+    color: #f47a3f;
+    opacity: 1;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#sfn0 {
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+#sfnd2 {
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+#sfnn {
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+#sfne {
+    width: 150px;
+    border-radius: 10%;
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+
+#sfnn span {
+    font-size: 50px; transition: all 2s ease;
+}
+
+#sfne span {
+    font-size: 80px; transition: all 2s ease;
+}
+
+
+
+#sfn1 {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#sfn2 {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#sfn3 {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#sfnp {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#sfnm {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+
+
+#sfnp span,
+#sfnm span {
+    font-size: 100px; transition: all 2s ease;
+}
+
+
+
+#sfn4 {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#sfn5 {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#sfn6 {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#sfnt {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#sfnd {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+
+
+#sfnt span {
+    font-size: 80px; transition: all 2s ease;
+}
+
+
+#sfn7 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+#sfn8 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+#sfn9 {
+    top: 45%;
+    transition: all 2s ease;  left: 150%;
+}
+
+#sfnp1 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+#sfnp2 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+
+
+
+#sfce {
+    top: 30%;
+    transition: all 2s ease;left: -50%;
+}
+
+#sfc {
+    top: 30%;
+    transition: all 2s ease;left: -50%;
+}
+
+
+
+.crbutton {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    opacity: 0.6;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 0.05s ease;
+    z-index: 2;
+}
+
+.crbutton img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    z-index: 0;
+}
+
+.crbutton:hover {
+    opacity: 1;
+}
+
+.crbutton span {
+    font-family: "digital-7";
+    font-size: 60px;
+    color: black;
+    opacity: 1;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#crn0 {
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+#crnd2 {
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+#crnn {
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+#crne {
+    width: 150px;
+    border-radius: 10%;
+    top: 90%;
+    transition: all 2s ease;left: -50%;
+}
+
+
+#crnn span {
+    font-size: 50px; transition: all 2s ease;
+}
+
+#crne span {
+    font-size: 80px; transition: all 2s ease;
+}
+
+
+
+#crn1 {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#crn2 {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#crn3 {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#crnp {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+#crnm {
+    top: 75%;
+    transition: all 2s ease; left: 150%;
+}
+
+
+
+#crnp span,
+#crnm span {
+    font-size: 100px; transition: all 2s ease;
+}
+
+
+
+#crn4 {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#crn5 {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#crn6 {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#crnt {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+#crnd {
+    top: 60%;
+    transition: all 2s ease;left: -50%;
+}
+
+
+
+#crnt span {
+    font-size: 80px; transition: all 2s ease;
+}
+
+
+#crn7 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+#crn8 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+#crn9 {
+    top: 45%;
+    transition: all 2s ease;  left: 150%;
+}
+
+#crnp1 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+#crnp2 {
+    top: 45%;
+    transition: all 2s ease; left: 150%;
+}
+
+
+
+
+#crce {
+    top: 30%;
+    transition: all 2s ease;left: -50%;
+}
+
+#crc {
+    top: 30%;
+    transition: all 2s ease; left: -50%;
+}
+#NLwest {position: fixed; width: 150px; top: 18%; left: 40.5%; z-index:-1;}
+#nl {position: fixed;font-family: "digital-7"; font-size: 25px; color: black; top:31%; left:30%;}
+#west  {position: fixed;font-family: "digital-7"; font-size: 40px; color: black; top:36%; left:34%;}
+#black {position: fixed;width: 415px;height: 100px;background: black; border-radius: 10%; top: 10%; left: 30%; overflow: hidden;
+    white-space: nowrap; text-overflow: ellipsis;display: flex;align-items: center;justify-content: flex-end;}
+#aa {position:relative; text-align: right; margin-right:20px; top:5%; font-tamily: "digital-7"; color: red; font-size: 70px;max-width: 100%; overflow: hidden;
+    white-space: nowrap;text-overflow: ellipsis;}
+
+#normalt {position: fixed; font-family: "digital-7"; font-size: 25px; color: red; top:17%; left:91.7%;}
+
+
+#normal {position: fixed;width: 120px;height: 50px;background: black; border-radius: 30%; top: 15%; left: 90%;}
+#dodgers {position: fixed;width: 70px;height: 70px;background: black; border-radius: 50%; top: 25%; left: 93%;}
+#padres {position: fixed;width: 70px;height: 70px;background: black; border-radius: 50%; top: 40%; left: 93%;}
+#dbacks {position: fixed;width: 70px;height: 70px;background: black; border-radius: 50%; top: 55%; left: 93%;}
+#giants {position: fixed;width: 70px;height: 70px;background: black; border-radius: 50%; top: 70%; left: 93%;}
+#rockies {position: fixed;width: 70px;height: 70px;background: black; border-radius: 50%; top: 85%; left: 93%;}
+
+
+#LAD {position: fixed; width: 70px; top: 22.5%; left: 93.1%;}
+#SD {position: fixed; width: 70px; top: 37.6%; left: 93.1%;}
+#ARI {position: fixed; width: 90px; top: 50%; left: 92.1%;}
+#SF {position: fixed; width: 90px; top: 66%; left: 92.5%;}
+#CR {position: fixed; width: 90px; top: 81%; left: 92.2%;}
+
+
+
+
+
+

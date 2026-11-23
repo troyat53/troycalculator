@@ -1,0 +1,46 @@
+#change{width: 100px; height: 100px; background: black; position: absolute;top: 50%; left:50%; }
+#square {
+  width: 150px;
+  height: 150px;
+  background: green; position: absolute; top:1%; left:88%; animation: aa 3s infinite; }
+#square1 {
+  width: 150px;
+  height: 150px;
+  background: yellow; position: absolute; top:74%; left:88%;animation: bb 3s infinite;}
+#square2 {
+  width: 150px;
+  height: 150px;
+  background: red; position: absolute; top:1%; left:1%;animation: cc 3s infinite;}
+#square3 {
+  width: 150px;
+  height: 150px;
+  background: blue; position: absolute; top:74%; left:1%; animation: dd 3s infinite;}
+
+@keyframes aa {
+0% { top:1%; left:88%; background: green; width:150px; height: 150px;}
+25% { top:74%; left:88%; background: yellow; width:200px; height: 200px;}
+50% { top:74%; left:1%; background: blue; width:250px; height: 250px;}
+75% { top:1%; left:1%; background: red; width:300px; height: 300px;}
+100% { top:1%; left:88%; background: green; width: 150px; height: 150px;}
+}
+@keyframes bb {
+0% { top:74%; left:88%; background: yellow;  width:200px; height: 200px;}
+25% { top:74%; left:1%; background: blue;width:250px; height: 250px;}
+50% { top:1%; left:1%; background: red; width:300px; height: 300px;}
+75% { top:1%; left:88%; background: green; width:150px; height: 150px;}
+100% { top:74%; left:88%; background: yellow;  width:200px; height: 200px;}
+}
+@keyframes cc {
+0% { top:1%; left:1%; background: red; width:300px; height: 300px;}
+25% { top:1%; left:88%; background: green; width:150px; height: 150px;}
+50% { top:74%; left:88%; background: yellow; width:200px; height: 200px;}
+75% { top:74%; left:1%; background: blue; width:250px; height: 250px;}
+100% { top:1%; left:1%; background: red; width:300px; height: 300px;}
+}
+@keyframes dd {
+0% { top:74%; left:1%; background: blue;width:250px; height: 250px;}
+25% { top:1%; left:1%; background: red; width:300px; height: 300px;}
+50% { top:1%; left:88%; background: green; width:150px; height: 150px;}
+75% { top:74%; left:88%; background: yellow; width:200px; height: 200px;}
+100% { top:74%; left:1%; background: blue; width:250px; height: 250px;}
+

@@ -1,0 +1,17 @@
+<HTML>
+<HEAD>
+<TITLE>square animations</TITLE>
+<link rel="stylesheet" href="squares.css">
+</HEAD>
+<BODY>
+<DIV id='square'></DIV>
+<DIV id='square1'></DIV>
+<DIV id='square2'></DIV>
+<DIV id='square3'></DIV>
+<DIV id=change onclick="
+  ['square', 'square1', 'square2', 'square3'].forEach(id => {let el = document.getElementById(id);
+    el.style.animationDirection = (el.style.animationDirection === 'reverse') ? 'normal' : 'reverse';
+  });
+"></DIV>
+</BODY>
+</HTML>
